@@ -153,21 +153,21 @@ const regionEmploye = {
       phone: '+7 (495) 620-20-00<br>(доб. 11534)',
       email: 'BorodinAA@mos.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Иванов Дмитрий Александрович',
       position: 'Директор департамента системы государственных услуг Департамента информационных технологий города Москвы',
       phone: '+7 (495) 620-20-00<br>(доб. 11138)',
       email: 'IvanovDA@mos.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Бутурлин Иван Александрович',
       position: 'Начальник аналитического управления Департамента информационных технологий города Москвы',
       phone: '+7 (495) 620-20-00<br>(доб. 11528)',
       email: 'ButurlinIA@mos.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Онтоев Дмитрий Владимирович',
       position: 'Заместитель начальника аналитического управления Департамента информационных технологий города Москвы',
@@ -190,21 +190,21 @@ const regionEmploye = {
       phone: '+7 (812) 576-48-53',
       email: 'voronina@kis.gov.spb.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Лихолетов Андрей Вольдемарович',
       position: 'Начальник отдела информационно-компьютерной безопасности Управления информационной безопасности и технической защиты информации',
       phone: '+7 (812) 576-78-52',
       email: 'likholetov@kis.gov.spb.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Бушихин Игорь Викторович',
       position: 'Начальник отдела городских телекоммуникаций и развития сетей связи',
       phone: '+7 (812) 576-44-35',
       email: 'bushihin@kis.gov.spb.ru',
     },
-	{
+    {
       photo: 'img/no_foto.svg',
       name: 'Соловьева Екатерина Олеговна',
       position: 'Начальник сектора мониторинга общественного мнения',
@@ -233,7 +233,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
-    contacts: regionEmploye.sp,	
+    contacts: regionEmploye.sp,
   },
   {
     code: 'sl',
@@ -242,6 +242,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.sl,
   },
   {
     code: 'al',
@@ -250,6 +251,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.al,
   },
   {
     code: 'am',
@@ -258,6 +260,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.am,
   },
   {
     code: 'ar',
@@ -266,6 +269,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ar,
   },
   {
     code: 'as',
@@ -274,6 +278,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.as,
   },
   {
     code: 'bl',
@@ -282,6 +287,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.bl,
   },
   {
     code: 'bn',
@@ -290,6 +296,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.bn,
   },
   {
     code: 'vm',
@@ -298,6 +305,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.vm,
   },
   {
     code: 'vl',
@@ -306,6 +314,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.vl,
   },
   {
     code: 'vo',
@@ -314,6 +323,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.vo,
   },
   {
     code: 'vn',
@@ -322,6 +332,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.vn,
   },
   {
     code: 'eu',
@@ -330,6 +341,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.eu,
   },
   {
     code: 'zb',
@@ -338,6 +350,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.zb,
   },
   {
     code: 'iv',
@@ -346,6 +359,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.iv,
   },
   {
     code: 'ir',
@@ -354,6 +368,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ir,
   },
   {
     code: 'kb',
@@ -362,6 +377,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.kb,
   },
   {
     code: 'kn',
@@ -370,6 +386,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.kn,
   },
   {
     code: 'kj',
@@ -378,6 +395,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.kj,
   },
   {
     code: 'ka',
@@ -386,6 +404,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ka,
   },
   {
     code: 'kc',
@@ -394,6 +413,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.kc,
   },
   {
     code: 'km',
@@ -402,6 +422,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.km,
   },
   {
     code: 'ki',
@@ -410,6 +431,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ki,
   },
   {
     code: 'kt',
@@ -426,6 +448,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ks,
   },
   {
     code: 'kr',
@@ -434,6 +457,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.kr,
   },
   {
     code: 'ku',
@@ -442,6 +466,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ku,
   },
   {
     code: 'ky',
@@ -450,6 +475,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.ky,
   },
   {
     code: 'le',
@@ -458,6 +484,7 @@ const regionContactsList = [
     link: '#',
     place: '-',
     index: '-/-',
+    contacts: regionEmploye.le,
   },
   {
     code: 'lp',
@@ -612,7 +639,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.lt,
   },
-    {
+  {
     code: 'bs',
     name: 'Республика Башкортостан',
     picture: 'img/coat/coat_bs.svg',
@@ -630,7 +657,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.br,
   },
-    {
+  {
     code: 'da',
     name: 'Республика Дагестан',
     picture: 'img/coat/coat_da.svg',
@@ -684,7 +711,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.cr,
   },
-    {
+  {
     code: 'ml',
     name: 'Республика Марий Эл',
     picture: 'img/coat/coat_ml.svg',
@@ -837,7 +864,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.tr,
   },
-    {
+  {
     code: 'tm',
     name: 'Томская область',
     picture: 'img/coat/coat_tm.svg',
@@ -855,7 +882,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.tl,
   },
-    {
+  {
     code: 'tu',
     name: 'Тюменская область',
     picture: 'img/coat/coat_tu.svg',
@@ -909,7 +936,7 @@ const regionContactsList = [
     index: '-/-',
     contacts: regionEmploye.ce,
   },
-    {
+  {
     code: 'cc',
     name: 'Чеченская Республика',
     picture: 'img/coat/coat_cc.svg',
@@ -1043,7 +1070,7 @@ const renderRegionContactsCard = (arr) => {
   return fragmentContactRegion;
 };
 
-//renderRegionContactsCard(regionContactsList[1].contacts);
+// renderRegionContactsCard(regionContactsList[1].contacts);
 
 // ----Ф-ция рендерящая карточки контактов для Регионов
 const renderContactsRegion = (array) => {
@@ -1059,7 +1086,7 @@ const renderContactsRegion = (array) => {
       const contactWindow = document.createElement('div');
       contactWindow.classList.add('contactWindow');
       // ----Ищем массив с нужным кодом------
-      const index = regionContactsList.findIndex(el => el.code === evt.target.id);
+      const index = regionContactsList.findIndex((el) => el.code === evt.target.id);
       console.log(index);
       // ------------------------------------
       contactWindow.innerHTML = `
@@ -1083,10 +1110,10 @@ const renderContactsRegion = (array) => {
           <tr>
             <td class="index">( ${item.place} )
             </td>
-            <td class="index">( ${item.index} )   
-            </td>			   
+            <td class="index">( ${item.index} )
+            </td>
           </tr>
-        </table>		
+        </table>
       </div>`;
       contactWindow.appendChild(renderRegionContactsCard(item.contacts));
       contactWindow.innerHTML += '<div class="close">X</div>';
