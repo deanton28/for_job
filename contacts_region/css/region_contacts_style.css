@@ -1,0 +1,38 @@
+/* div {
+  border: 1px solid #000;
+} */
+
+.switcher {
+  margin: 10px auto;
+  width: 50%;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contacts-button {
+  float: left;
+  padding: 5px;
+  width: 50%;
+  border: 1px solid #989898;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.active {
+  background: #ffffff;
+}
+
+.contacts-ceki {
+  border-radius: 50px 0 0 50px;
+    box-shadow: -3px 0 5px 5px #989898;
+}
+
+.contacts-region {
+  border-radius: 0 50px 50px 0;
+  box-shadow: 3px 0 5px 5px #989898;
+}

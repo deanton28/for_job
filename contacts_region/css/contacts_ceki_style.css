@@ -1,0 +1,187 @@
+.contacts-ceki_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  min-width: 450px;
+  max-width: 1150px;
+  margin: 50px auto;
+  /* padding: 5px; */
+  /* border: 1px solid #000; */
+}
+
+.contact-card {
+  width: 50%;
+  min-width: 450px;
+  padding: 20px 10px;
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+}
+
+.region {
+  position: relative;
+  width: 33%;
+  margin: 3% 5%;
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-card table {
+  width: 100%;
+}
+
+.contact-card td {
+  /* border: 1px solid #000; */
+}
+
+.contact-card td.foto,
+ td.test {
+  width: 30%;
+  min-width: 100px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.contact-card td.text {
+  padding: 3px;
+}
+
+.contact-card td.ico {
+  width: 5%;
+  min-width: 15px;
+}
+
+.contact-card td.foto img,
+td.test img {
+  width: 100%;
+}
+
+.contact-card td.name {
+  font-size: 1.3em;
+}
+
+.contact-card td.position {
+  font-size: 1.1em;
+}
+
+.contact-card td.contact,
+.contact-card td.question {
+  font-size: 1.2em;
+}
+
+.contact-card td.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.region a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.region .coat {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.region .region-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    white-space: nowrap;
+}
+
+/*----------Стиль выспывающего окна---------*/
+.contact-popup {
+	/*display: none;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.contactWindow {
+  position: relative;
+  margin: 5% auto;
+  padding: 2% 5%;
+  width: 80%;
+  max-height: 85%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background: #f0f0f0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.wrapper {
+	display:flex;
+  justify-content: space-around;
+	flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.contactWindow .contact-card {
+  max-width: 550px;
+  min-width: 300px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*---------Плашка региона---------------------*/
+.contactWindow .region-logo_wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.region-logo_wrapper .title {
+	margin-left: 3px;
+	margin-bottom: 15px;
+}
+
+.region-logo_wrapper .title_lite-gray {
+	font-size: 0.8em;
+	color: #999999;
+	letter-spacing: 4px;
+}
+
+.region-logo_wrapper table {
+	margin-bottom: 15px;
+}
+
+.region-logo_wrapper td.coat {
+	width: 60px;
+}
+
+.region-logo_wrapper td.coat img {
+	width: 100%;
+}
+
+.region-logo_wrapper td.name,
+.region-logo_wrapper td.index {
+	font-size: 2em;
+}
+
+.region-logo_wrapper td.name {
+	padding-left: 20px;
+	letter-spacing: 3px;
+}
+
+.region-logo_wrapper td.plase {
+	padding-right: 80px;
+}
