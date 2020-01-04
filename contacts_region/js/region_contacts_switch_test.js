@@ -212,6 +212,43 @@ const regionEmploye = {
       email: 'solovyeva@kis.gov.spb.ru',
     },
   ],
+  sl: [
+    {
+      photo: 'img/no_foto.svg',
+      name: 'Осипова Александра Александровна',
+      position: 'Заместитель начальника Главного управления - начальник управления информатизации',
+      phone: '+7 (8692) 41-76-76',
+      email: 'a.osipova@sev.gov.ru',
+    },
+    {
+      photo: 'img/no_foto.svg',
+      name: 'Тимофеев Денис Александрович',
+      position: 'Заместитель начальника Главного управления',
+      phone: '+7 (8692) 40-41-90',
+      email: 'denis.timofeev@sev.gov.ru',
+    },
+    {
+      photo: 'img/no_foto.svg',
+      name: 'Чугунов Андрей Анатольевич',
+      position: 'Начальник Управления цифрового развития и реализации государственных программ',
+      phone: '',
+      email: 'andrey.chugunov@sev.gov.ru',
+    },
+    {
+      photo: 'img/no_foto.svg',
+      name: 'Черноусова Татьяна Романовна',
+      position: 'Заместитель начальника управления - начальник отдела планирования и цифрового развития Управления цифрового развития и реализации государственных программ',
+      phone: '+7 (8692) 41-76-95',
+      email: 'tatiana.chernousova@sev.gov.ru',
+    },
+    {
+      photo: 'img/no_foto.svg',
+      name: 'Мирошниченко Юлия Владимировна',
+      position: 'Главный специалист-эксперт отдела планирования и цифрового развития Управления цифрового развития и реализации государственных программ',
+      phone: '+7 (8692) 54-37-65',
+      email: 'yulia.miroshnichenko@sev.gov.ru',
+    },
+  ],
 };
 
 console.log(regionEmploye.mc[0].name);
