@@ -1,0 +1,9 @@
+div.faq-region-wrapper {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.faq-region-wrapper .block-title {
+  color: #0c6692;
+}
