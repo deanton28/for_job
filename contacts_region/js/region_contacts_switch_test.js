@@ -91,7 +91,7 @@ const renderContactsRegion = (array) => {
   array.forEach((item) => {
     const newElement = document.createElement('div');
     newElement.classList.add('contact-card', 'region');
-    newElement.innerHTML = `<a href="${item.link}"><img class="coat" src="${item.picture}" alt="Герб региона" id ="${item.code}"></a>
+    newElement.innerHTML = `<img class="coat" src="${item.picture}" alt="Герб региона" id ="${item.code}">
                             <span class="region-name">${item.name}</span>`;
     newElement.addEventListener('click', (evt) => {
       console.log(evt.target.id);
