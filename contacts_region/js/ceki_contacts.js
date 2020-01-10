@@ -1,6 +1,7 @@
 window.cekiContacts = {};
 
 (function cekiContacts(exports) {
+  const telNumberCeki = '+7 (495) 530 22 44'
   exports.linkForWebtutor = '/custom_template/contacts_region/';
   exports.cekiContactsList = [
     {
@@ -23,7 +24,7 @@ window.cekiContacts = {};
       name: 'Кудряшова Ольга Михайловна',
       foto: exports.linkForWebtutor + 'img/kudryashova_3x4.png',
       position: 'Директор департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3030)',
+      phone: `${telNumberCeki}<br>(доб. 3030)`,
       email: 'okudryashova@ceki.ru',
       question: 'Курируемые вопросы: координация, методическое обеспечение, мониторинг и реализация региональной цифровизации',
     },
@@ -79,7 +80,7 @@ window.cekiContacts = {};
       name: 'Углирж Ольга Леонидовна',
       foto: exports.linkForWebtutor + 'img/uglirzh_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3137)',
+      phone: `${telNumberCeki}<br>(доб. 3137)`,
       email: 'ouglirzh@ceki.ru',
       question: 'Курируемые вопросы: методическое обеспечение региональной цифровизации',
     },
@@ -87,7 +88,7 @@ window.cekiContacts = {};
       name: 'Чиковани Александр Тенгизович',
       foto: exports.linkForWebtutor + 'img/chikovani_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3139)',
+      phone: `${telNumberCeki}<br>(доб. 3139)`,
       email: 'achikovani@ceki.ru',
       question: 'Курируемые вопросы: методическое обеспечение региональной цифровизации',
     },
@@ -95,7 +96,7 @@ window.cekiContacts = {};
       name: 'Пудов Сергей Александрович',
       foto: exports.linkForWebtutor + 'img/pudov_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3170)',
+      phone: `${telNumberCeki}<br>(доб. 3170)`,
       email: 'spudov@ceki.ru',
       question: 'Курируемые вопросы: методическое обеспечение региональной цифровизации',
     },
@@ -103,7 +104,7 @@ window.cekiContacts = {};
       name: 'Колокольцова Анастасия Викторовна',
       foto: exports.linkForWebtutor + 'img/kolokoltsova_3x4.png',
       position: 'Ведущий специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3118)',
+      phone: `${telNumberCeki}<br>(доб. 3118)`,
       email: 'akolokoltsova@ceki.ru',
       question: 'Курируемые вопросы: методическое обеспечение региональной цифровизации',
     },
@@ -119,7 +120,7 @@ window.cekiContacts = {};
       name: 'Оленин Валерий Анатольевич',
       foto: exports.linkForWebtutor + 'img/olenin_3x4.png',
       position: 'Ведущий специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 1040)',
+      phone: `${telNumberCeki}<br>(доб. 1040)`,
       email: 'volenin@ceki.ru',
       question: 'Курируемые вопросы: методическое обеспечение региональной цифровизации',
     },
@@ -127,7 +128,7 @@ window.cekiContacts = {};
       name: 'Сушкова Ирина Вадимовна',
       foto: exports.linkForWebtutor + 'img/sushkova_3x4.png',
       position: 'Старший специалист управления по координации, мониторингу и реализации региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3135)',
+      phone: `${telNumberCeki}<br>(доб. 3135)`,
       email: 'isushkova@ceki.ru',
       question: 'Курируемые вопросы: координация, мониторинг и реализация региональной цифровизации',
     },
@@ -135,7 +136,7 @@ window.cekiContacts = {};
       name: 'Иванцева Оксана Игоревна',
       foto: exports.linkForWebtutor + 'img/ivantseva_3x4.png',
       position: 'Специалист управления по координации, мониторингу и реализации региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
-      phone: '+7 (499) 600-11-22<br>(доб. 3140)',
+      phone: `${telNumberCeki}<br>(доб. 3140)`,
       email: 'oivantseva@ceki.ru',
       question: 'Курируемые вопросы: координация, мониторинг и реализация региональной цифровизации',
     },
