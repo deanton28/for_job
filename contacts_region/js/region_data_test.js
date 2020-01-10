@@ -5,7 +5,7 @@ window.regionData = {};
     {
       code: 'mc',
       name: 'г. Москва',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_mc.svg',
+      picture: 'img/coat/coat_mc.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -14,7 +14,7 @@ window.regionData = {};
     {
       code: 'sp',
       name: 'г. Санкт-Петербург',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sp.svg',
+      picture: 'img/coat/coat_sp.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -23,7 +23,7 @@ window.regionData = {};
     {
       code: 'sl',
       name: 'г. Севастополь',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sl.svg',
+      picture: 'img/coat/coat_sl.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -32,7 +32,7 @@ window.regionData = {};
     {
       code: 'al',
       name: 'Алтайский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_al.svg',
+      picture: 'img/coat/coat_al.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -41,7 +41,7 @@ window.regionData = {};
     {
       code: 'am',
       name: 'Амурская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_am.svg',
+      picture: 'img/coat/coat_am.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -50,7 +50,7 @@ window.regionData = {};
     {
       code: 'ar',
       name: 'Архангельская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ar.svg',
+      picture: 'img/coat/coat_ar.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -59,7 +59,7 @@ window.regionData = {};
     {
       code: 'as',
       name: 'Астраханская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_as.svg',
+      picture: 'img/coat/coat_as.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -68,7 +68,7 @@ window.regionData = {};
     {
       code: 'bl',
       name: 'Белгородская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_bl.svg',
+      picture: 'img/coat/coat_bl.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -77,7 +77,7 @@ window.regionData = {};
     {
       code: 'bn',
       name: 'Брянская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_bn.svg',
+      picture: 'img/coat/coat_bn.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -86,7 +86,7 @@ window.regionData = {};
     {
       code: 'vm',
       name: 'Владимирская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_vm.svg',
+      picture: 'img/coat/coat_vm.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -95,7 +95,7 @@ window.regionData = {};
     {
       code: 'vl',
       name: 'Волгоградская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_vl.svg',
+      picture: 'img/coat/coat_vl.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -104,7 +104,7 @@ window.regionData = {};
     {
       code: 'vo',
       name: 'Вологодская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_vo.svg',
+      picture: 'img/coat/coat_vo.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -113,7 +113,7 @@ window.regionData = {};
     {
       code: 'vn',
       name: 'Воронежская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_vn.svg',
+      picture: 'img/coat/coat_vn.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -122,7 +122,7 @@ window.regionData = {};
     {
       code: 'eu',
       name: 'Еврейская автономная область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_eu.svg',
+      picture: 'img/coat/coat_eu.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -131,7 +131,7 @@ window.regionData = {};
     {
       code: 'zb',
       name: 'Забайкальский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_zb.svg',
+      picture: 'img/coat/coat_zb.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -140,7 +140,7 @@ window.regionData = {};
     {
       code: 'iv',
       name: 'Ивановская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_iv.svg',
+      picture: 'img/coat/coat_iv.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -149,7 +149,7 @@ window.regionData = {};
     {
       code: 'ir',
       name: 'Иркутская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ir.svg',
+      picture: 'img/coat/coat_ir.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -158,7 +158,7 @@ window.regionData = {};
     {
       code: 'kb',
       name: 'Кабардино-Балкарская Республика',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kb.svg',
+      picture: 'img/coat/coat_kb.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -167,7 +167,7 @@ window.regionData = {};
     {
       code: 'kn',
       name: 'Калининградская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kn.svg',
+      picture: 'img/coat/coat_kn.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -176,7 +176,7 @@ window.regionData = {};
     {
       code: 'kj',
       name: 'Калужская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kj.svg',
+      picture: 'img/coat/coat_kj.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -185,7 +185,7 @@ window.regionData = {};
     {
       code: 'ka',
       name: 'Камчатский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ka.svg',
+      picture: 'img/coat/coat_ka.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -194,7 +194,7 @@ window.regionData = {};
     {
       code: 'kc',
       name: 'Карачаево-Черкесская Республика',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kc.svg',
+      picture: 'img/coat/coat_kc.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -203,7 +203,7 @@ window.regionData = {};
     {
       code: 'km',
       name: 'Кемеровская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_km.svg',
+      picture: 'img/coat/coat_km.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -212,7 +212,7 @@ window.regionData = {};
     {
       code: 'ki',
       name: 'Кировская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ki.svg',
+      picture: 'img/coat/coat_ki.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -221,7 +221,7 @@ window.regionData = {};
     {
       code: 'kt',
       name: 'Костромская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kt.svg',
+      picture: 'img/coat/coat_kt.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -229,7 +229,7 @@ window.regionData = {};
     {
       code: 'ks',
       name: 'Краснодарский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ks.svg',
+      picture: 'img/coat/coat_ks.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -238,7 +238,7 @@ window.regionData = {};
     {
       code: 'kr',
       name: 'Красноярский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kr.svg',
+      picture: 'img/coat/coat_kr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -247,7 +247,7 @@ window.regionData = {};
     {
       code: 'ku',
       name: 'Курганская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ku.svg',
+      picture: 'img/coat/coat_ku.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -256,7 +256,7 @@ window.regionData = {};
     {
       code: 'ky',
       name: 'Курская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ky.svg',
+      picture: 'img/coat/coat_ky.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -265,7 +265,7 @@ window.regionData = {};
     {
       code: 'le',
       name: 'Ленинградская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_le.svg',
+      picture: 'img/coat/coat_le.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -274,7 +274,7 @@ window.regionData = {};
     {
       code: 'lp',
       name: 'Липецкая область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_lp.svg',
+      picture: 'img/coat/coat_lp.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -283,7 +283,7 @@ window.regionData = {};
     {
       code: 'ma',
       name: 'Магаданская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ma.svg',
+      picture: 'img/coat/coat_ma.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -292,7 +292,7 @@ window.regionData = {};
     {
       code: 'mo',
       name: 'Московская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_mo.svg',
+      picture: 'img/coat/coat_mo.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -301,7 +301,7 @@ window.regionData = {};
     {
       code: 'mu',
       name: 'Мурманская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_mu.svg',
+      picture: 'img/coat/coat_mu.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -310,7 +310,7 @@ window.regionData = {};
     {
       code: 'ne',
       name: 'Ненецкий автономный округ',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ne.svg',
+      picture: 'img/coat/coat_ne.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -319,7 +319,7 @@ window.regionData = {};
     {
       code: 'nn',
       name: 'Нижегородская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_nn.svg',
+      picture: 'img/coat/coat_nn.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -328,7 +328,7 @@ window.regionData = {};
     {
       code: 'no',
       name: 'Новгородская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_no.svg',
+      picture: 'img/coat/coat_no.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -337,7 +337,7 @@ window.regionData = {};
     {
       code: 'nv',
       name: 'Новосибирская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_nv.svg',
+      picture: 'img/coat/coat_nv.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -346,7 +346,7 @@ window.regionData = {};
     {
       code: 'om',
       name: 'Омская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_om.svg',
+      picture: 'img/coat/coat_om.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -355,7 +355,7 @@ window.regionData = {};
     {
       code: 'ob',
       name: 'Оренбургская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ob.svg',
+      picture: 'img/coat/coat_ob.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -364,7 +364,7 @@ window.regionData = {};
     {
       code: 'or',
       name: 'Орловская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_or.svg',
+      picture: 'img/coat/coat_or.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -373,7 +373,7 @@ window.regionData = {};
     {
       code: 'pz',
       name: 'Пензенская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_pz.svg',
+      picture: 'img/coat/coat_pz.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -382,7 +382,7 @@ window.regionData = {};
     {
       code: 'pe',
       name: 'Пермский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_pe.svg',
+      picture: 'img/coat/coat_pe.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -391,7 +391,7 @@ window.regionData = {};
     {
       code: 'pr',
       name: 'Приморский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_pr.svg',
+      picture: 'img/coat/coat_pr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -400,7 +400,7 @@ window.regionData = {};
     {
       code: 'ps',
       name: 'Псковская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ps.svg',
+      picture: 'img/coat/coat_ps.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -409,7 +409,7 @@ window.regionData = {};
     {
       code: 'ad',
       name: 'Республика Адыгея',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ad.svg',
+      picture: 'img/coat/coat_ad.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -418,7 +418,7 @@ window.regionData = {};
     {
       code: 'lt',
       name: 'Республика Алтай',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_lt.svg',
+      picture: 'img/coat/coat_lt.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -427,7 +427,7 @@ window.regionData = {};
     {
       code: 'bs',
       name: 'Республика Башкортостан',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_bs.svg',
+      picture: 'img/coat/coat_bs.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -436,7 +436,7 @@ window.regionData = {};
     {
       code: 'br',
       name: 'Республика Бурятия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_br.svg',
+      picture: 'img/coat/coat_br.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -445,7 +445,7 @@ window.regionData = {};
     {
       code: 'da',
       name: 'Республика Дагестан',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_da.svg',
+      picture: 'img/coat/coat_da.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -454,7 +454,7 @@ window.regionData = {};
     {
       code: 'in',
       name: 'Республика Ингушетия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_in.svg',
+      picture: 'img/coat/coat_in.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -463,7 +463,7 @@ window.regionData = {};
     {
       code: 'kk',
       name: 'Республика Калмыкия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kk.svg',
+      picture: 'img/coat/coat_kk.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -472,7 +472,7 @@ window.regionData = {};
     {
       code: 'kl',
       name: 'Республика Карелия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_kl.svg',
+      picture: 'img/coat/coat_kl.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -481,7 +481,7 @@ window.regionData = {};
     {
       code: 'ko',
       name: 'Республика Коми',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ko.svg',
+      picture: 'img/coat/coat_ko.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -490,7 +490,7 @@ window.regionData = {};
     {
       code: 'cr',
       name: 'Республика Крым',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_cr.svg',
+      picture: 'img/coat/coat_cr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -499,7 +499,7 @@ window.regionData = {};
     {
       code: 'ml',
       name: 'Республика Марий Эл',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ml.svg',
+      picture: 'img/coat/coat_ml.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -508,7 +508,7 @@ window.regionData = {};
     {
       code: 'mr',
       name: 'Республика Мордовия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_mr.svg',
+      picture: 'img/coat/coat_mr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -517,7 +517,7 @@ window.regionData = {};
     {
       code: 'sa',
       name: 'Республика Саха (Якутия)',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sa.svg',
+      picture: 'img/coat/coat_sa.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -526,7 +526,7 @@ window.regionData = {};
     {
       code: 'so',
       name: 'Республика Северная Осетия-Алания',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_so.svg',
+      picture: 'img/coat/coat_so.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -535,7 +535,7 @@ window.regionData = {};
     {
       code: 'ta',
       name: 'Республика Татарстан',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ta.svg',
+      picture: 'img/coat/coat_ta.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -544,7 +544,7 @@ window.regionData = {};
     {
       code: 'tv',
       name: 'Республика Тыва',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tv.svg',
+      picture: 'img/coat/coat_tv.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -553,7 +553,7 @@ window.regionData = {};
     {
       code: 'hk',
       name: 'Республика Хакасия',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_hk.svg',
+      picture: 'img/coat/coat_hk.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -562,7 +562,7 @@ window.regionData = {};
     {
       code: 'ro',
       name: 'Ростовская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ro.svg',
+      picture: 'img/coat/coat_ro.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -571,7 +571,7 @@ window.regionData = {};
     {
       code: 'rz',
       name: 'Рязанская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_rz.svg',
+      picture: 'img/coat/coat_rz.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -580,7 +580,7 @@ window.regionData = {};
     {
       code: 'ss',
       name: 'Самарская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ss.svg',
+      picture: 'img/coat/coat_ss.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -589,7 +589,7 @@ window.regionData = {};
     {
       code: 'sr',
       name: 'Саратовская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sr.svg',
+      picture: 'img/coat/coat_sr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -598,7 +598,7 @@ window.regionData = {};
     {
       code: 'sh',
       name: 'Сахалинская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sh.svg',
+      picture: 'img/coat/coat_sh.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -607,7 +607,7 @@ window.regionData = {};
     {
       code: 'sv',
       name: 'Свердловская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sv.svg',
+      picture: 'img/coat/coat_sv.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -616,7 +616,7 @@ window.regionData = {};
     {
       code: 'sm',
       name: 'Смоленская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_sm.svg',
+      picture: 'img/coat/coat_sm.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -625,7 +625,7 @@ window.regionData = {};
     {
       code: 'st',
       name: 'Ставропольский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_st.svg',
+      picture: 'img/coat/coat_st.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -634,7 +634,7 @@ window.regionData = {};
     {
       code: 'tb',
       name: 'Тамбовская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tb.svg',
+      picture: 'img/coat/coat_tb.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -643,7 +643,7 @@ window.regionData = {};
     {
       code: 'tr',
       name: 'Тверская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tr.svg',
+      picture: 'img/coat/coat_tr.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -652,7 +652,7 @@ window.regionData = {};
     {
       code: 'tm',
       name: 'Томская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tm.svg',
+      picture: 'img/coat/coat_tm.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -661,7 +661,7 @@ window.regionData = {};
     {
       code: 'tl',
       name: 'Тульская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tl.svg',
+      picture: 'img/coat/coat_tl.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -670,7 +670,7 @@ window.regionData = {};
     {
       code: 'tu',
       name: 'Тюменская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_tu.svg',
+      picture: 'img/coat/coat_tu.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -679,7 +679,7 @@ window.regionData = {};
     {
       code: 'ud',
       name: 'Удмуртская Республика',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ud.svg',
+      picture: 'img/coat/coat_ud.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -688,7 +688,7 @@ window.regionData = {};
     {
       code: 'ul',
       name: 'Ульяновская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ul.svg',
+      picture: 'img/coat/coat_ul.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -697,7 +697,7 @@ window.regionData = {};
     {
       code: 'ha',
       name: 'Хабаровский край',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ha.svg',
+      picture: 'img/coat/coat_ha.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -706,7 +706,7 @@ window.regionData = {};
     {
       code: 'ht',
       name: 'Ханты-Мансийский автономный округ-Югра',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ht.svg',
+      picture: 'img/coat/coat_ht.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -715,7 +715,7 @@ window.regionData = {};
     {
       code: 'ce',
       name: 'Челябинская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ce.svg',
+      picture: 'img/coat/coat_ce.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -724,7 +724,7 @@ window.regionData = {};
     {
       code: 'cc',
       name: 'Чеченская Республика',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_cc.svg',
+      picture: 'img/coat/coat_cc.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -733,7 +733,7 @@ window.regionData = {};
     {
       code: 'cu',
       name: 'Чувашская Республика',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_cu.svg',
+      picture: 'img/coat/coat_cu.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -742,7 +742,7 @@ window.regionData = {};
     {
       code: 'ch',
       name: 'Чукотский автономный округ',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ch.svg',
+      picture: 'img/coat/coat_ch.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -751,7 +751,7 @@ window.regionData = {};
     {
       code: 'ya',
       name: 'Ямало-Ненецкий автономный округ',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_ya.svg',
+      picture: 'img/coat/coat_ya.svg',
       link: '#',
       place: '-',
       index: '-/-',
@@ -760,7 +760,7 @@ window.regionData = {};
     {
       code: 'yr',
       name: 'Ярославская область',
-      picture: window.cekiContacts.linkForWebtutor + 'img/coat/coat_yr.svg',
+      picture: 'img/coat/coat_yr.svg',
       link: '#',
       place: '-',
       index: '-/-',

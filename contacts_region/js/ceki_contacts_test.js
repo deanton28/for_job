@@ -1,12 +1,11 @@
 window.cekiContacts = {};
 
 (function cekiContacts(exports) {
-  const telNumberCeki = '+7 (495) 530 22 44'
-  exports.linkForWebtutor = '/custom_template/contacts_region/';
+  const telNumberCeki = '+7 (495) 530 22 44';
   exports.cekiContactsList = [
     {
       name: 'Зарубин Юрий Владимирович',
-      foto: exports.linkForWebtutor + 'img/zarubin_3x4.png',
+      foto: 'img/zarubin_3x4.png',
       position: 'Заместитель директора Департамента координации и реализации проектов по цифровой экономике Минкомсвязи РФ',
       phone: '',
       email: 'y.zarubin@digital.gov.ru',
@@ -14,7 +13,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Буяджи Павел Андреевич',
-      foto: exports.linkForWebtutor + 'img/buyadzhi_3x4.png',
+      foto: 'img/buyadzhi_3x4.png',
       position: 'Директор ФГБУ «ЦЭКИ»',
       phone: '',
       email: 'pbuyadzhi@ceki.ru',
@@ -22,7 +21,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Кудряшова Ольга Михайловна',
-      foto: exports.linkForWebtutor + 'img/kudryashova_3x4.png',
+      foto: 'img/kudryashova_3x4.png',
       position: 'Директор департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3030)`,
       email: 'okudryashova@ceki.ru',
@@ -30,7 +29,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Елисеева Наталья Владимировна',
-      foto: exports.linkForWebtutor + 'img/eliseeva_3x4.png',
+      foto: 'img/eliseeva_3x4.png',
       position: 'Начальник управления координации реализации проектов в сфере региональной информатизации ФГБУ «ЦЭКИ»',
       phone: '+7 (495) 771-80-00<br>(доб. 48385)',
       email: 'n.eliseeva@digital.gov.ru',
@@ -38,7 +37,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Багиева Зарина Васильевна',
-      foto: exports.linkForWebtutor + 'img/bagieva_3x4.png',
+      foto: 'img/bagieva_3x4.png',
       position: 'Начальник управления организационного взаимодействия ФГБУ «ЦЭКИ»',
       phone: '+7 (495) 771-80-00<br>(доб. 48686)',
       email: 'z.bagieva@digital.gov.ru',
@@ -46,7 +45,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Синдяков Павел Сергеевич',
-      foto: exports.linkForWebtutor + 'img/sindyakov_3x4.png',
+      foto: 'img/sindyakov_3x4.png',
       position: 'Региональный менеджер',
       phone: '+7 (495) 771-80-00<br>(доб. 44430)',
       email: 'p.sindyakov@digital.gov.ru',
@@ -54,7 +53,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Козырева Дарья Александровна',
-      foto: exports.linkForWebtutor + 'img/kozyreva_3x4.png',
+      foto: 'img/kozyreva_3x4.png',
       position: 'Региональный менеджер',
       phone: '+7 (495) 771-80-00<br>(доб. 44533)',
       email: 'd.kozyreva@digital.gov.ru',
@@ -62,7 +61,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Насонов Кирилл Николаевич',
-      foto: exports.linkForWebtutor + 'img/nasonov_3x4.png',
+      foto: 'img/nasonov_3x4.png',
       position: 'Заместитель начальника отдела координации региональной цифровизации Департамента координации и реализации проектов по цифровой экономике Министерства цифрового развития, связи и массовых коммуникаций Российской Федерации',
       phone: '+7 (495) 771-80-00<br>(доб. 48876)',
       email: 'k.nasonov@digital.gov.ru',
@@ -70,7 +69,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Дернова Ирина Александровна',
-      foto: exports.linkForWebtutor + 'img/dernova_3x4.png',
+      foto: 'img/dernova_3x4.png',
       position: 'Старший специалист управления по координации, мониторингу и реализации региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: '+7 (495) 771-80-00<br>(доб. 44593)',
       email: 'I.dernova@digital.gov.ru',
@@ -78,7 +77,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Углирж Ольга Леонидовна',
-      foto: exports.linkForWebtutor + 'img/uglirzh_3x4.png',
+      foto: 'img/uglirzh_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3137)`,
       email: 'ouglirzh@ceki.ru',
@@ -86,7 +85,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Чиковани Александр Тенгизович',
-      foto: exports.linkForWebtutor + 'img/chikovani_3x4.png',
+      foto: 'img/chikovani_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3139)`,
       email: 'achikovani@ceki.ru',
@@ -94,7 +93,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Пудов Сергей Александрович',
-      foto: exports.linkForWebtutor + 'img/pudov_3x4.png',
+      foto: 'img/pudov_3x4.png',
       position: 'Главный специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3170)`,
       email: 'spudov@ceki.ru',
@@ -102,7 +101,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Колокольцова Анастасия Викторовна',
-      foto: exports.linkForWebtutor + 'img/kolokoltsova_3x4.png',
+      foto: 'img/kolokoltsova_3x4.png',
       position: 'Ведущий специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3118)`,
       email: 'akolokoltsova@ceki.ru',
@@ -110,7 +109,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Садыкова Алла Юсуфовна',
-      foto: exports.linkForWebtutor + 'img/sadykova_3x4.png',
+      foto: 'img/sadykova_3x4.png',
       position: 'Ведущий специалист управления координации реализации проектов в сфере региональной информатизации ФГБУ «ЦЭКИ»',
       phone: '+7 (495) 771-80-00<br>(доб. 48685)',
       email: 'a.sadykova@digital.gov.ru',
@@ -118,7 +117,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Оленин Валерий Анатольевич',
-      foto: exports.linkForWebtutor + 'img/olenin_3x4.png',
+      foto: 'img/olenin_3x4.png',
       position: 'Ведущий специалист управления методического обеспечения региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 1040)`,
       email: 'volenin@ceki.ru',
@@ -126,7 +125,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Сушкова Ирина Вадимовна',
-      foto: exports.linkForWebtutor + 'img/sushkova_3x4.png',
+      foto: 'img/sushkova_3x4.png',
       position: 'Старший специалист управления по координации, мониторингу и реализации региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3135)`,
       email: 'isushkova@ceki.ru',
@@ -134,7 +133,7 @@ window.cekiContacts = {};
     },
     {
       name: 'Иванцева Оксана Игоревна',
-      foto: exports.linkForWebtutor + 'img/ivantseva_3x4.png',
+      foto: 'img/ivantseva_3x4.png',
       position: 'Специалист управления по координации, мониторингу и реализации региональной цифровизации Департамента координации региональной цифровизации ФГБУ «ЦЭКИ»',
       phone: `${telNumberCeki}<br>(доб. 3140)`,
       email: 'oivantseva@ceki.ru',
