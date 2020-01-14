@@ -12,7 +12,7 @@ const renderContactsCeki = (array) => {
                               <tbody>
                                 <tr>
                                   <td class="foto test" rowspan="4"><img src="${item.foto}" alt="Фото"></td>
-                                  <td class="text name" colspan="2"> ${item.name}</td>
+                                  <td class="text name" colspan="2"><a target="_blank" href="/chat/default.html">${item.name}</a></td>
                                 </tr>
                                 <tr>
                                   <td class="text position" colspan="2">${item.position}</td>
@@ -57,7 +57,7 @@ const renderRegionContactsCard = (arr) => {
           <tr>
             <td class="foto" rowspan="4"><img alt="Фото" src="${item.photo}" />
             </td>
-            <td class="text name" colspan="2">${item.name}
+            <td class="text name" colspan="2"><a target="_blank" href="/chat/default.html">${item.name}</a>
             </td>
           </tr>
           <tr>

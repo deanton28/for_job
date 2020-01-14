@@ -76,6 +76,11 @@ td.test img {
   color: inherit;
 }
 
+.contact-card td.name a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
 .region a {
   color:inherit;
   text-decoration: none;
