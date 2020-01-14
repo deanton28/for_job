@@ -77,7 +77,7 @@ td.test img {
 }
 
 .contact-card td.name a {
-  /* text-decoration: none; */
+  text-decoration: underline;
   color: inherit;
 }
 
