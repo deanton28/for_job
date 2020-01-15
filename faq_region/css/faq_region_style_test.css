@@ -1,15 +1,18 @@
 div.faq-region-wrapper {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .faq-region-wrapper .block-title {
+  padding: 20px 20px 0 20px;
   color: #0c6692;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .faq-region-wrapper .question-block {
-  padding: 20px;
+  /* padding: 20px; */
   border-left: 1px solid #cacaca;
 }
 
@@ -24,10 +27,18 @@ div.faq-region-wrapper {
 }
 
 .faq-region-wrapper ul {
-  margin: 20px 0;
-  padding: 0;
+  margin: 0;
+  padding: 20px;
   list-style: none;
 }
+
+/* .faq-region-wrapper .block-title:hover + ul {
+  display: block;
+} */
+
+/* .faq-region-wrapper ul:hover {
+  display: block;
+} */
 
 .faq-region-wrapper ul li {
   margin-top: -1px;
@@ -45,10 +56,11 @@ div.faq-region-wrapper {
 
 .faq-region-wrapper .question {
   border-bottom: 1px dashed #e6e6e6;
+  cursor: pointer;
 }
 
 .faq-region-wrapper .answer {
-  display: none;
+  /* display: none; */
   background: #ffffff;
 }
 
@@ -58,6 +70,10 @@ div.faq-region-wrapper {
   font-weight: bold;
 }
 
-.faq-region-wrapper .question:hover  + .answer {
+/* .faq-region-wrapper .question:hover  + .answer {
   display: block;
+} */
+
+.faq-region-wrapper .visible .list-type {
+  transform: rotate(225deg);
 }
