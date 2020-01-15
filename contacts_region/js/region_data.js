@@ -225,6 +225,7 @@ window.regionData = {};
       link: '#',
       place: '-',
       index: '-/-',
+      contacts: window.regionContacts.regionContactsList.ki,
     },
     {
       code: 'ks',
