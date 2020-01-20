@@ -40,12 +40,12 @@ div.faq-region-wrapper {
   display: block;
 } */
 
-.faq-region-wrapper ul li {
+.faq-region-wrapper ul > li {
   margin-top: -1px;
   border: 1px dashed #e6e6e6;
 }
 
-.faq-region-wrapper ul li:nth-child(odd) {
+.faq-region-wrapper ul > li:nth-child(odd) {
   background: #f5f5f5;
 }
 
