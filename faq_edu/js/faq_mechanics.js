@@ -11,17 +11,9 @@ for (let i = 0; i < titleNames.length; i += 1) {
     console.log(evt.target.dataset.target);
     const target = workPlace.querySelector(evt.target.dataset.target);
 
-    console.log(target.hidden);
+    console.log(target.classList);
 
-    if (target.hidden) {
-      titleNames[i].classList.add('visible');
-      target.removeAttribute('hidden');
-    } else {
-      titleNames[i].classList.remove('visible');
-      target.setAttribute('hidden', 'hidden');
-    }
-
-    console.log(target.getAttribute('hidden'));
+    titleNames[i].classList.toggle('visible');
 
     const questionsList = target.querySelectorAll('.question');
     console.log(questionsList);
@@ -32,31 +24,9 @@ for (let i = 0; i < titleNames.length; i += 1) {
         const answer = target.querySelector(ev.target.dataset.target);
 
         console.log(answer);
-        console.log(answer.hidden);
 
-        if (answer.hidden) {
-          answer.removeAttribute('hidden');
-        } else {
-          answer.setAttribute('hidden', 'hidden');
-        }
-
-        console.log(target.getAttribute('hidden'));
+        answer.classList.toggle('visible');
       });
     }
   });
 }
-
-// titleNames.addEventListener('click', (evt) => {
-//   console.log(evt.target.dataset.target);
-//   const target = workPlace.querySelector(evt.target.dataset.target);
-//
-//   console.log(target.hidden);
-//
-//   if (target.hidden) {
-//     target.removeAttribute('hidden');
-//   } else {
-//     target.setAttribute('hidden', 'hidden');
-//   }
-//
-//   console.log(target.getAttribute('hidden'));
-// });

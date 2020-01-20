@@ -24,21 +24,23 @@ div.faq-region-wrapper {
   border-top: 1px solid #0c6692;
   border-left: 1px solid #0c6692;
   transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.faq-region-wrapper .visible .list-type {
+  transform: rotate(225deg);
 }
 
 .faq-region-wrapper ul {
+  display: none;
   margin: 0;
   padding: 20px;
   list-style: none;
 }
 
-/* .faq-region-wrapper .block-title:hover + ul {
+.faq-region-wrapper .visible + ul{
   display: block;
-} */
-
-/* .faq-region-wrapper ul:hover {
-  display: block;
-} */
+}
 
 .faq-region-wrapper ul > li {
   margin-top: -1px;
@@ -60,8 +62,12 @@ div.faq-region-wrapper {
 }
 
 .faq-region-wrapper .answer {
-  /* display: none; */
+  display: none;
   background: #ffffff;
+}
+
+.faq-region-wrapper .answer.visible {
+  display: block;
 }
 
 .faq-region-wrapper .answer-word {
@@ -73,7 +79,3 @@ div.faq-region-wrapper {
 /* .faq-region-wrapper .question:hover  + .answer {
   display: block;
 } */
-
-.faq-region-wrapper .visible .list-type {
-  transform: rotate(225deg);
-}
