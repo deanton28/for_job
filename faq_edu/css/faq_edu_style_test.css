@@ -31,7 +31,7 @@ div.faq-region-wrapper {
   transform: rotate(225deg);
 }
 
-.faq-region-wrapper ul {
+.faq-region-wrapper .question-block > ul {
   display: none;
   margin: 0;
   padding: 20px;
