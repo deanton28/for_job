@@ -1,4 +1,4 @@
-window.regionData = {};
+﻿window.regionData = {};
 
 (function regionData(exports) {
   exports.regionDataList = [
