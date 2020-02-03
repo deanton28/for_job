@@ -14,6 +14,7 @@ for (let i = 0; i < titleNames.length; i += 1) {
     console.log(target.classList);
 
     titleNames[i].classList.toggle('visible');
+    target.style.height = target.scrollHeight - 40;
 
     const questionsList = target.querySelectorAll('.question');
     console.log(questionsList);
@@ -25,7 +26,19 @@ for (let i = 0; i < titleNames.length; i += 1) {
 
         console.log(answer);
 
-        answer.classList.toggle('visible');
+        if (answer.classList.contains('visible')) {
+          target.style.height = target.scrollHeight - 40 - answer.scrollHeight;
+          answer.classList.remove('visible');
+          answer.style.height = 0;
+          console.log(target.scrollHeight);
+        } else {
+          answer.classList.add('visible');
+          answer.style.height = answer.scrollHeight - 20;
+          console.log(target.scrollHeight);
+          setTimeout((target.style.height = target.scrollHeight - 40), 1000);
+        }
+
+        console.log(`scrollHeight = ${answer.scrollHeight}`);
       });
     }
   });

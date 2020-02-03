@@ -61,6 +61,9 @@ div.faq-region-wrapper {
   margin: 0;
   padding: 20px;
   list-style: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
 }
 
 .faq-region-wrapper .visible + ul{
@@ -88,7 +91,10 @@ div.faq-region-wrapper {
 
 .faq-region-wrapper .answer {
   display: none;
+  height: 0;
+  overflow: hidden;
   background: #ffffff;
+  /* transition: height 0.5s; */
 }
 
 .faq-region-wrapper .answer.visible {
