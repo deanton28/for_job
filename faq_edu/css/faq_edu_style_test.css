@@ -1,3 +1,8 @@
+@keyframes change_background-color {
+  to {
+    background-color: yellow;
+  }
+}
 div.faq-region-wrapper {
   margin: 10px;
   padding: 10px;
@@ -5,10 +10,30 @@ div.faq-region-wrapper {
 }
 
 .faq-region-wrapper .block-title {
+  position: relative;
   padding: 20px 20px 0 20px;
   color: #0c6692;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.faq-region-wrapper .block-title::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  width: 13px;
+  height: 13px;
+  background-color: #0c6692;
+  /* border: 1px solid #000000; */
+  border-radius: 50%;
+  /* transition: background-color 0.5s; */
+}
+
+.faq-region-wrapper .visible.block-title::before {
+  animation-name: change_background-color;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .faq-region-wrapper .question-block {
