@@ -103,8 +103,8 @@ td.test img {
 .contact-popup {
 	/*display: none;*/
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 83px;
+	left: 280px;
 	bottom: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.6);
