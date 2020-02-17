@@ -51,12 +51,11 @@
   background-size: 100% 100%;
   overflow: hidden;
   white-space: normal;
-  transition: color 0.5s,
-              transform 0.5s,
-              font-weight 0.5s,
-              width 0.5s,
-              margin-left 0.5s;
-              /* box-shadow 0.5; */
+  transition: color 0.3s,
+              transform 0.3s,
+              font-weight 0.3s,
+              width 0.3s,
+              margin-left 0.3s;
 }
 
 .icon .unit-name {

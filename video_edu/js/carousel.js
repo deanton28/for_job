@@ -23,7 +23,7 @@ arrowRight.addEventListener('click', () => {
       iconsList[3].remove();
       iconsList = iconsArea.querySelectorAll('.icon');
       console.log(iconsList);
-    }, 500);
+    }, 300);
   }, 30);
 });
 
@@ -38,5 +38,5 @@ arrowLeft.addEventListener('click', () => {
     iconsList[0].remove();
     iconsList = iconsArea.querySelectorAll('.icon');
     console.log(iconsList);
-  }, 500);
+  }, 300);
 });
