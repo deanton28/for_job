@@ -1,11 +1,12 @@
 ﻿.carousel_wrapper {
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 20px auto;
   padding: 10px;
+  min-width: 780px;
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .arrow-left,
@@ -17,7 +18,6 @@
   border-top: 3px solid #000;
   border-left: 3px solid #000;
   cursor: pointer;
-  /* transform: rotate(45deg); */
 }
 
 .arrow-left {
@@ -29,15 +29,10 @@
 }
 
 .icons_wrapper {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
   display: inline-block;
-  width: 615px;
-  /* height: 400px; */
-  /* clear: both; */
-  /* text-align: center; */
-  border: 1px solid #000;
+  width: 610px;
+  text-align: center;
+  /* border: 1px solid #000; */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -48,18 +43,20 @@
   justify-content: center;
   width: 200px;
   margin: 30px 0;
-  /* margin-left: -1px; */
   padding: 0 15px;
   box-sizing: border-box;
-  /* min-width: 170px; */
   height: 150px;
   vertical-align: middle;
-  /* border: 1px solid #000; */
   background: url(../img/pict-unit.jpg) no-repeat center center;
   background-size: 100% 100%;
   overflow: hidden;
   white-space: normal;
-  transition: color 3s, transform 3s, font-weight 3s, width 3s, margin 3s, padding 3s;
+  transition: color 0.5s,
+              transform 0.5s,
+              font-weight 0.5s,
+              width 0.5s,
+              margin-left 0.5s;
+              /* box-shadow 0.5; */
 }
 
 .icon .unit-name {
@@ -71,12 +68,14 @@
 }
 
 .icon.active {
-  /* height: 180px; */
+  position: relative;
   font-weight: bold;
   color: red;
-  /* transform: scale(1.2); */
+  z-index: 100;
+  transform: scale(1.2);
+  box-shadow: 0 0 5px 5px #bfbfbf;
 }
 
 .icon.move-left {
-  transform: translate(-200px);
+  margin-left: -200px;
 }
