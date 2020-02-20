@@ -53,6 +53,10 @@
   min-width: 15px;
 }
 
+.contact-card td.ico img{
+  width: 100%;
+}
+
 .contact-card td.foto img,
 td.test img {
   width: 100%;

@@ -51,8 +51,8 @@ const renderContactsRegion = function (array) {
       const contactWindow = document.createElement('div');
       contactWindow.classList.add('contactWindow');
       // ----Ищем массив с нужным кодом------
-      const index = window.regionData.regionDataList.findIndex((el) => el.code === evt.target.id);
-      console.log(index);
+      // const index = window.regionData.regionDataList.findIndex((el) => el.code === evt.target.id);
+      // console.log(index);
       // ------------------------------------
       contactWindow.innerHTML = '<div class="region-logo_wrapper"><p class="title title_lite-gray">МОЙ РЕГИОН</p><table><tr><td class="coat"><img src="' + item.picture + '"></td><td class="name"><b>' + item.name + '</b></td></tr></table><table><tr><td class="plase title_lite-gray">МЕСТО В РЕЙТИНГЕ</td><td class="title_lite-gray">ИНДЕКС</td></tr><tr><td class="index">( ' + item.place + ' )</td><td class="index">( ' + item.index + ' )</td></tr></table></div>';
       contactWindow.appendChild(renderRegionContactsCard(item.contacts));

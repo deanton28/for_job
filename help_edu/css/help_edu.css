@@ -13,7 +13,7 @@
   box-shadow: 0 0 3px 3px #bfbfbf;
   cursor: pointer;
   transition: background 0.2s,
-			  box-shadow 0.2s;
+			        box-shadow 0.2s;
 }
 
 .help-icon.close {
