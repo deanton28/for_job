@@ -1,16 +1,27 @@
 <head>
-  <link rel="stylesheet" href="css/faq_edu_style_test.css">
+  <!-- <link rel="stylesheet" href="css/faq_edu_style_test.css"> -->
+  <link rel="stylesheet" href="css/faq_edu_style.css">
   <title>Вопрос-Ответ</title>
 </head>
 <body>
-  <div class="faq-region-wrapper">
-    <div class="question-block">
-      <div data-target=".block-questions_01" class="block-title">
+  <div class="faq-edu-wrapper">
+    <div class="choice-block-area">
+      <div class="arrow-left">
+      </div>
+      <div class="block-area">
+        <div class="block-name active" data-target=".block-questions_01"><p>Объект учета</p></div>
+        <div class="block-name" data-target=".block-questions_02"><p>Мероприятия по информатизации</p></div>
+      </div>
+      <div class="arrow-right">
+      </div>
+    </div>
+    <div class="question-block block-questions_01">
+      <!-- <div data-target=".block-questions_01" class="block-title">
         <div class="list-type">
         </div>
         Объект учета
-      </div>
-      <ul class='block-questions_01'>
+      </div> -->
+      <ul class='questions-list'>
         <li>
           <div data-target=".answer_01" class="question">
             Как в ручную внести изменение в поле "Текущий статус ИС" электронного паспорта объекта учета?
@@ -174,16 +185,43 @@
             <span class="answer-word">Ответ:</span>
             При внесении сведений в поле «Наименование ПО, ТО» подраздела 3.2. «Виды обеспечения объекта учета» следует указывать наименование технического обеспечения. Например, <i>монитор</i>.<br>Также в данном поле может быть указана марка ТО, в случае если исполнен государственный контракт. Например, <i>монитор Vecom</i>.
           </div>
-        </li>		
+        </li>
+        <li>
+          <div data-target=".answer_19" class="question">
+            ЧК какой классификационной категории ОУ следует отнести «Право на использование программного продукта «СБиС++ Электронная отчетность»?
+          </div>
+          <div class="answer answer_19">
+            <span class="answer-word">Ответ:</span>
+            Программный продукт «СБиС++ Электронная отчетность» следует отнести к 23 классификационной категории, т. к. система необходима для управления финансами, и в соответствии с приложением №1 приказа Минкомсвязи России от 31 мая 2013 г. № 127 "Об утверждении методических указаний по осуществлению учета информационных систем и компонентов информационно-телекоммуникационной инфраструктуры" системы обеспечения деятельности в сфере управления финансов относятся к 23 классификационной категории.
+          </div>
+        </li>
+        <li>
+          <div data-target=".answer_20" class="question">
+            ЧК какой классификационной категории ОУ может быть отнесен принтер?
+          </div>
+          <div class="answer answer_20">
+            <span class="answer-word">Ответ:</span>
+            Принтер может быть отнесен к 43 или 41 классификационным категориям, если:<br>- принтер сетевой, а значит относится к группе типовых компонентов ИТКИ «Средства печати и копирования данных, издательские системы», то следует применить 43 классификационную категорию,<br>- принтер локальный, т. е. входит в состав АРМ, следует отнести его к 41 классификационной категории.
+          </div>
+        </li>
+        <li>
+          <div data-target=".answer_21" class="question">
+            К какой классификационной категории относится ОУ ПО secretNet?
+          </div>
+          <div class="answer answer_21">
+            <span class="answer-word">Ответ:</span>
+            ПО secretNet следует отнести к объекту учёта 46 классификационной категории, т.к  ПО относится к средствам защиты информации.
+          </div>
+        </li>
       </ul>
     </div>
-    <div class="question-block">
-      <div data-target=".block-questions_02" class="block-title">
+    <div class="question-block block-questions_02" hidden>
+      <!-- <div data-target=".block-questions_02" class="block-title">
         <div class="list-type">
         </div>
         Мероприятия по информатизации
-      </div>
-      <ul class='block-questions_02'>
+      </div> -->
+      <ul class='question-list'>
         <li>
           <div data-target=".answer_01" class="question">
             Какими нормативными документами следует руководствоваться при создании мероприятия по информатизации на 1 этапе во ФГИС КИ?
@@ -307,6 +345,7 @@
     </div>
   </div>
 
-  <script src="js/faq_mechanics.js"></script>
+  <!-- <script src="js/faq_mechanics.js"></script> -->
+  <script src="js/faq_edu_mechanics.js"></script>
 
 </body>
