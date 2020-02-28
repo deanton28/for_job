@@ -11,6 +11,14 @@ div.faq-region-wrapper {
   box-sizing: border-box;
 }
 
+.faq-region-wrapper .sub-block_name {
+  margin-left: 55px;
+  padding: 15px 20px 0 20px;
+  /* color: #0c6692; */
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
 .faq-region-wrapper .question-block {
   /* padding: 20px; */
   border-left: 1px solid #cacaca;
