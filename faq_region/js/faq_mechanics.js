@@ -20,43 +20,43 @@ for (let i = 0; i < titleNames.length; i += 1) {
       titleNames[i].classList.remove('visible');
       target.setAttribute('hidden', 'hidden');
     }
+  });
+}
 
-    console.log(target.getAttribute('hidden'));
+const questionsList = workPlace.querySelectorAll('.question');
+console.log(questionsList);
 
-    const questionsList = target.querySelectorAll('.question');
-    console.log(questionsList);
+for (let a = 0; a < questionsList.length; a += 1) {
+  questionsList[a].addEventListener('click', (ev) => {
+    console.log(ev.target.dataset.target);
+    const answer = workPlace.querySelector(ev.target.dataset.target);
 
-    for (let a = 0; a < questionsList.length; a += 1) {
-      questionsList[a].addEventListener('click', (ev) => {
-        console.log(ev.target.dataset.target);
-        const answer = target.querySelector(ev.target.dataset.target);
+    console.log(answer);
+    console.log(answer.hidden);
 
-        console.log(answer);
-        console.log(answer.hidden);
-
-        if (answer.hidden) {
-          answer.removeAttribute('hidden');
-        } else {
-          answer.setAttribute('hidden', 'hidden');
-        }
-
-        console.log(target.getAttribute('hidden'));
-      });
+    if (answer.hidden) {
+      answer.removeAttribute('hidden');
+    } else {
+      answer.setAttribute('hidden', 'hidden');
     }
   });
 }
 
-// titleNames.addEventListener('click', (evt) => {
-//   console.log(evt.target.dataset.target);
-//   const target = workPlace.querySelector(evt.target.dataset.target);
-//
-//   console.log(target.hidden);
-//
-//   if (target.hidden) {
-//     target.removeAttribute('hidden');
-//   } else {
-//     target.setAttribute('hidden', 'hidden');
-//   }
-//
-//   console.log(target.getAttribute('hidden'));
-// });
+const subBlockList = workPlace.querySelectorAll('.sub-block_name');
+console.log(subBlockList);
+
+for (let a = 0; a < subBlockList.length; a += 1) {
+  subBlockList[a].addEventListener('click', (ev) => {
+    console.log(ev.target);
+    const answer = workPlace.querySelector(ev.target.dataset.target);
+
+    console.log(answer);
+    console.log(answer.hidden);
+
+    if (answer.hidden) {
+      answer.removeAttribute('hidden');
+    } else {
+      answer.setAttribute('hidden', 'hidden');
+    }
+  });
+}
