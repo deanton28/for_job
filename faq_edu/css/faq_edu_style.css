@@ -11,16 +11,12 @@
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  /* min-width: 780px; */
-  /* margin: 20px auto; */
-  /* padding: 10px; */
-  /* border-bottom: 3px solid #00264c; */
+  min-height: 70px;
 }
 
 .block-name {
   display: inline-flex;
   position: relative;
-  /* margin: 10px; */
   margin-left: -20px;
   padding: 0;
   width: 200px;
@@ -28,10 +24,11 @@
   text-align: center;
   color: #d99116;
   background: #fff;
-  /* border: 1px solid #000; */
   border-radius: 20px 20px 0 0;
   box-shadow: 0 0 5px #bfbfbf;
   cursor: pointer;
+  transition: height 0.3s,
+              background 0.3s;
 }
 
 .block-name:last-child {
