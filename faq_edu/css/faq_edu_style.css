@@ -1,57 +1,58 @@
+.faq-edu-wrapper {
+  width: 100%;
+  min-width: 700px;
+  max-width: 1280px;
+}
+
 .choice-block-area {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
-  min-width: 780px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #000;
-}
-
-.arrow-left,
-.arrow-right {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-  cursor: pointer;
-}
-
-.arrow-left {
-  transform: rotate(-45deg);
-}
-
-.arrow-right {
-  transform: rotate(135deg);
-}
-
-.block-area {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* min-width: 610px; */
-  border: 1px solid #000;
+  /* min-width: 780px; */
+  /* margin: 20px auto; */
+  /* padding: 10px; */
+  /* border-bottom: 3px solid #00264c; */
 }
 
 .block-name {
   display: inline-flex;
-  margin: 10px;
+  position: relative;
+  /* margin: 10px; */
+  margin-left: -20px;
   padding: 0;
   width: 200px;
-  height: 70px;
+  height: 50px;
   text-align: center;
-  border: 1px solid #000;
+  color: #d99116;
+  background: #fff;
+  /* border: 1px solid #000; */
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 5px #bfbfbf;
+  cursor: pointer;
+}
+
+.block-name:last-child {
+  margin-left: 1px;
 }
 
 .block-name.active {
-  border: 1px solid #f30
+  height: 70px;
+  background: #00264c;
+  z-index: 1000;
 }
 
 .block-name p {
   margin: auto;
+}
+
+.bottom-line {
+  margin-bottom: 20px;
+  border: 2px solid #00264c;
+  position: relative;
+  z-index: 1000;
 }
 
 .question-block {
@@ -93,4 +94,18 @@
   overflow: hidden;
   background: #ffffff;
   /* transition: height 0.5s; */
+}
+
+.question-block .answer.visible {
+  display: block;
+  height: auto;
+  /* overflow: hidden; */
+  /* background: #ffffff; */
+  /* transition: height 0.5s; */
+}
+
+.faq-edu-wrapper .answer-word {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
