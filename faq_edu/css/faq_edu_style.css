@@ -1,6 +1,6 @@
 .faq-edu-wrapper {
   margin: auto;
-  width: 100%;
+  width: 90%;
   min-width: 700px;
   max-width: 1280px;
 }
@@ -55,15 +55,16 @@
 
 .question-block {
   /* height: 0; */
+  margin-left: 20px;
   margin-bottom: 40px;
-  border-left: 1px solid #cacaca;
-  overflow: hidden;
+  border-left: 2px solid #cacaca;
+  overflow: visible;
   transition: height 1s;
 }
 
 .question-block > ul {
   /* display: none; */
-  margin: 0 0 0 20px;
+  margin: 0 0 0 23px;
   padding: 0;
   list-style: none;
   /* height: 0; */
@@ -86,21 +87,62 @@
 }
 
 .question-block .question {
-  border-bottom: 1px dashed #e6e6e6;
+  position: relative;
   cursor: pointer;
 }
+
+.question-block .question .circle {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+}
+
+.circle .circle_circle {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, rgba(8,98,140,1) 20%, rgba(36,139,195,1) 50%, rgba(8,98,140,1) 80%);
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.circle .circle_point {
+  margin:auto;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%
+}
+
+/* .question-block .question::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 10px solid black: linear-gradient(90deg, rgba(36,139,195,1) 0%, rgba(8,98,140,1) 52%, rgba(36,139,195,1) 100%);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+} */
 
 .question-block .answer {
   display: none;
   height: 0;
   overflow: hidden;
   background: #ffffff;
-  /* transition: height 0.5s; */
+  transition: height 0.5s;
 }
 
 .question-block .answer.visible {
   display: block;
   height: auto;
+  border-top: 1px dashed #e6e6e6;
   /* overflow: hidden; */
   /* background: #ffffff; */
   /* transition: height 0.5s; */
