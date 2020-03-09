@@ -3,10 +3,11 @@ const coiceBlockArea = workPlace.querySelector('.choice-block-area');
 console.log(coiceBlockArea);
 const blockList = workPlace.querySelectorAll('.block-name');
 const questionBlockList = workPlace.querySelectorAll('.question-block');
+const questions = workPlace.querySelectorAll('.questions-list > li');
 const questionList = workPlace.querySelectorAll('.question');
 const answerList = workPlace.querySelectorAll('.answer');
 
-for (question of questionList) {
+for (question of questions) {
   console.log(question.innerHTML);
   let circle = document.createElement('div');
   circle.classList.add('circle');
@@ -39,7 +40,7 @@ for (let i = 0; i < blockList.length; i += 1) {
       target.style.height = `${target.scrollHeight}px`;
       setTimeout(() => {
         target.style.height = '';
-      }, 1010);
+      }, 500);
     }, 10);
     console.log(target.attributes);
     console.log(target);
@@ -54,9 +55,9 @@ for (let i = 0; i < questionList.length; i += 1) {
 
     setTimeout(() => {
       target.style.height = `${target.scrollHeight}px`;
-      setTimeout(() => {
-        target.style.height = '';
-      }, 1010);
+      // setTimeout(() => {
+      //   target.style.height = '';
+      // }, 4000);
     }, 10);
   });
 }
