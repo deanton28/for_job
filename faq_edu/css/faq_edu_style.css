@@ -60,33 +60,29 @@
 }
 
 .question-block {
-  /* height: 0; */
-  /* margin-left: 20px; */
   margin-bottom: 40px;
-  /* border-left: 2px solid #cacaca; */
   overflow: hidden;
   transition: height 0.5s;
 }
 
 .question-block > ul {
-  /* display: none; */
   margin: 0 0 0 20px;
   padding: 0 0 0 23px;
   list-style: none;
   border-left: 2px solid #cacaca;
-  /* height: 0; */
-  /* overflow: hidden; */
-  /* transition: height 2s; */
 }
 
 .question-block > ul > li {
   position: relative;
-  margin-top: -1px;
-  border: 1px dashed #e6e6e6;
+  margin-bottom: 5px;
 }
 
-.question-block > ul > li:nth-child(odd) {
-  background: #f5f5f5;
+.question-block > ul > li:nth-child(odd) .question {
+  background: rgba(36,139,195,0.2);
+}
+
+.question-block > ul > li:nth-child(even) .question {
+  background: rgba(8,98,140,0.1);
 }
 
 .question-block .question,
@@ -96,6 +92,8 @@
 
 .question-block .question {
   position: relative;
+  border: 2px solid #cacaca;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -103,7 +101,6 @@
   position: absolute;
   top: 5px;
   left: -40px;
-  /* transform: translateY(-50%); */
   cursor: default;
 }
 
@@ -112,7 +109,6 @@
   width: 30px;
   height: 30px;
   background: linear-gradient(90deg, rgba(8,98,140,1) 20%, rgba(36,139,195,1) 50%, rgba(8,98,140,1) 80%);
-  /* border: 1px solid black; */
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -125,42 +121,23 @@
   border-radius: 50%;
 }
 
-/* .question-block .question::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: -40px;
-  width: 30px;
-  height: 30px;
-  background: #ffffff;
-  border: 10px solid black: linear-gradient(90deg, rgba(36,139,195,1) 0%, rgba(8,98,140,1) 52%, rgba(36,139,195,1) 100%);
-  border-radius: 50%;
-  box-sizing: border-box;
-  transform: translateY(-50%);
-} */
-
 .question-block .answer {
   display: none;
   height: 0;
   overflow: hidden;
-  background: rgba(36,139,195,0.1);
+  background: rgba(250,250,250,1);
   transition: height 0.5s;
 }
 
 .question-block .answer.visible {
   display: block;
-  /* height: auto; */
-  border-top: 1px dashed #e6e6e6;
-  /* overflow: hidden; */
-  /* background: #ffffff; */
-  /* transition: height 0.5s; */
 }
 
 .faq-edu-wrapper .answer-word {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #898989;
 }
 
 .answer.visible + .circle {
