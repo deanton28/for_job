@@ -78,11 +78,11 @@
 }
 
 .question-block > ul > li:nth-child(odd) .question {
-  background: rgba(36,139,195,0.2);
+  background: rgba(36,139,195,0.1);
 }
 
 .question-block > ul > li:nth-child(even) .question {
-  background: rgba(8,98,140,0.1);
+  background: rgba(8,98,140,0.05);
 }
 
 .question-block .question,
