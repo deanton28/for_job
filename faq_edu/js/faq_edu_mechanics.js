@@ -1,34 +1,42 @@
+const forEach = (array, collback) => {
+  for (let i = 0; i < array.length; i += 1) {
+    collback(array[i], i);
+  }
+};
+
+const addElementCircle = (parentElement) => {
+  const element = document.createElement('div');
+  element.classList.add('circle');
+  element.innerHTML = '<div class="circle_circle"><div class="circle_point"></div></div>';
+  parentElement.appendChild(element);
+};
+
+const removeClass = (element, className) => {
+  element.classList.remove(className);
+};
+
 const workPlace = document.querySelector('.faq-edu-wrapper');
-const coiceBlockArea = workPlace.querySelector('.choice-block-area');
-console.log(coiceBlockArea);
 const blockList = workPlace.querySelectorAll('.block-name');
 const questionBlockList = workPlace.querySelectorAll('.question-block');
 const questions = workPlace.querySelectorAll('.questions-list > li');
 const questionList = workPlace.querySelectorAll('.question');
 const answerList = workPlace.querySelectorAll('.answer');
 
-for (question of questions) {
-  console.log(question.innerHTML);
-  let circle = document.createElement('div');
-  circle.classList.add('circle');
-  circle.innerHTML = '<div class="circle_circle"><div class="circle_point"></div></div>';
-  question.appendChild(circle);
-}
+forEach(questions, addElementCircle);
 
 for (let i = 0; i < blockList.length; i += 1) {
   blockList[i].addEventListener('click', (evt) => {
-    console.log(evt.currentTarget);
-    for (let q = 0; q < blockList.length; q += 1) {
-      blockList[q].classList.remove('active');
-    }
+    forEach(blockList, (el) => {
+      removeClass(el, 'active');
+    });
 
     blockList[i].classList.add('active');
 
     const target = workPlace.querySelector(evt.currentTarget.dataset.target);
 
-    for (let a = 0; a < answerList.length; a += 1) {
-      answerList[a].classList.remove('visible');
-    }
+    forEach(answerList, (el) => {
+      removeClass(el, 'visible');
+    });
 
     for (let e = 0; e < questionBlockList.length; e += 1) {
       questionBlockList[e].style.height = '0';
@@ -42,8 +50,6 @@ for (let i = 0; i < blockList.length; i += 1) {
         target.style.height = '';
       }, 500);
     }, 10);
-    console.log(target.attributes);
-    console.log(target);
   });
 }
 
@@ -55,9 +61,6 @@ for (let i = 0; i < questionList.length; i += 1) {
 
     setTimeout(() => {
       target.style.height = `${target.scrollHeight}px`;
-      // setTimeout(() => {
-      //   target.style.height = '';
-      // }, 4000);
     }, 10);
   });
 }
