@@ -108,7 +108,7 @@
   display: flex;
   width: 30px;
   height: 30px;
-  background: linear-gradient(90deg, rgba(8,98,140,1) 20%, rgba(36,139,195,1) 50%, rgba(8,98,140,1) 80%);
+  background: linear-gradient(90deg, rgba(0, 38, 76, 1) 20%, rgba(36,139,195,1) 50%, rgba(0, 38, 76, 1) 80%);
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -142,7 +142,7 @@
 
 .answer.visible + .circle {
   animation-name: circle-rotate;
-  animation-duration: 5s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
