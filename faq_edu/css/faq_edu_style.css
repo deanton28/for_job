@@ -146,3 +146,16 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+.faq-edu-wrapper .answer-word {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.answer.visible + .circle {
+  animation-name: circle-rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
