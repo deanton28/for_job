@@ -15,8 +15,9 @@
   width: 50px;
   height: 50px;
   margin: 10px;
-  border-top: 3px solid #000;
-  border-left: 3px solid #000;
+  border-top: 5px solid #00264c;
+  border-left: 5px solid #00264c;
+  border-radius: 7px;
   cursor: pointer;
 }
 
@@ -47,7 +48,7 @@
   box-sizing: border-box;
   height: 150px;
   vertical-align: middle;
-  background: url(../img/pict-unit.jpg) no-repeat center center;
+  background: url(../img/frame.svg) no-repeat center center;
   background-size: 100% 100%;
   overflow: hidden;
   white-space: normal;
@@ -71,8 +72,8 @@
   font-weight: bold;
   color: rgb(201, 109, 47);
   z-index: 100;
-  transform: scale(1.2);
-  box-shadow: 0 0 5px 5px #bfbfbf;
+  transform: scale(1.7);
+  /* box-shadow: 0 0 5px 5px #bfbfbf; */
 }
 
 .icon.move-left {
