@@ -20,7 +20,7 @@
         "error",
         {
            "props": true,
-           "ignorePropertyModificationsFor": ["exports"]
+           "ignorePropertyModificationsFor": ["exports", "element"]
         }
       ]
     }
