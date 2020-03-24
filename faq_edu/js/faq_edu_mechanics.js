@@ -15,6 +15,17 @@ const removeClass = (element, className) => {
   element.classList.remove(className);
 };
 
+const hideElement = (element) => {
+  element.style.height = '0';
+  element.setAttribute('hidden', 'hiden');
+};
+
+const setTargetElement = (node, event) => node.querySelector(event.currentTarget.dataset.target);
+
+const setElementHeight = (element) => {
+  element.style.height = `${element.scrollHeight}px`;
+};
+
 const workPlace = document.querySelector('.faq-edu-wrapper');
 const blockList = workPlace.querySelectorAll('.block-name');
 const questionBlockList = workPlace.querySelectorAll('.question-block');
@@ -26,26 +37,24 @@ forEach(questions, addElementCircle);
 
 for (let i = 0; i < blockList.length; i += 1) {
   blockList[i].addEventListener('click', (evt) => {
+    const target = setTargetElement(workPlace, evt);
+
+    forEach(questionBlockList, hideElement);
+
     forEach(blockList, (el) => {
       removeClass(el, 'active');
     });
-
-    blockList[i].classList.add('active');
-
-    const target = workPlace.querySelector(evt.currentTarget.dataset.target);
 
     forEach(answerList, (el) => {
       removeClass(el, 'visible');
     });
 
-    for (let e = 0; e < questionBlockList.length; e += 1) {
-      questionBlockList[e].style.height = '0';
-      questionBlockList[e].setAttribute('hidden', 'hiden');
-    }
+    blockList[i].classList.add('active');
 
     target.removeAttribute('hidden');
+
     setTimeout(() => {
-      target.style.height = `${target.scrollHeight}px`;
+      setElementHeight(target);
       setTimeout(() => {
         target.style.height = '';
       }, 500);
@@ -55,12 +64,10 @@ for (let i = 0; i < blockList.length; i += 1) {
 
 for (let i = 0; i < questionList.length; i += 1) {
   questionList[i].addEventListener('click', (evt) => {
-    const target = workPlace.querySelector(evt.target.dataset.target);
-    target.style.height = `${target.scrollHeight}px`;
+    const target = setTargetElement(workPlace, evt);
+    setElementHeight(target);
     target.classList.toggle('visible');
 
-    setTimeout(() => {
-      target.style.height = `${target.scrollHeight}px`;
-    }, 10);
+    setTimeout(setElementHeight(target), 10);
   });
 }
