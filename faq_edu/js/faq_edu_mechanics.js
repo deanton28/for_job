@@ -26,6 +26,34 @@ const setElementHeight = (element) => {
   element.style.height = `${element.scrollHeight}px`;
 };
 
+const displaySelectedBlockQuestions = (event, node, blockNames, block, questions, answers) => {
+  const target = setTargetElement(node, event);
+
+  forEach(questions, hideElement);
+  forEach(blockNames, (el) => {
+    removeClass(el, 'active');
+  });
+  forEach(answers, (el) => {
+    removeClass(el, 'visible');
+  });
+  block.classList.add('active');
+  target.removeAttribute('hidden');
+  setTimeout(() => {
+    setElementHeight(target);
+    setTimeout(() => {
+      target.style.height = '';
+    }, 500);
+  }, 10);
+};
+
+const displayHideAnswer = (event, node) => {
+  const target = setTargetElement(node, event);
+
+  setElementHeight(target);
+  target.classList.toggle('visible');
+  setTimeout(setElementHeight(target), 10);
+};
+
 const workPlace = document.querySelector('.faq-edu-wrapper');
 const blockList = workPlace.querySelectorAll('.block-name');
 const questionBlockList = workPlace.querySelectorAll('.question-block');
@@ -34,40 +62,13 @@ const questionList = workPlace.querySelectorAll('.question');
 const answerList = workPlace.querySelectorAll('.answer');
 
 forEach(questions, addElementCircle);
-
-for (let i = 0; i < blockList.length; i += 1) {
-  blockList[i].addEventListener('click', (evt) => {
-    const target = setTargetElement(workPlace, evt);
-
-    forEach(questionBlockList, hideElement);
-
-    forEach(blockList, (el) => {
-      removeClass(el, 'active');
-    });
-
-    forEach(answerList, (el) => {
-      removeClass(el, 'visible');
-    });
-
-    blockList[i].classList.add('active');
-
-    target.removeAttribute('hidden');
-
-    setTimeout(() => {
-      setElementHeight(target);
-      setTimeout(() => {
-        target.style.height = '';
-      }, 500);
-    }, 10);
+forEach(blockList, (block) => {
+  block.addEventListener('click', (evt) => {
+    displaySelectedBlockQuestions(evt, workPlace, blockList, block, questionBlockList, answerList);
   });
-}
-
-for (let i = 0; i < questionList.length; i += 1) {
-  questionList[i].addEventListener('click', (evt) => {
-    const target = setTargetElement(workPlace, evt);
-    setElementHeight(target);
-    target.classList.toggle('visible');
-
-    setTimeout(setElementHeight(target), 10);
+});
+forEach(questionList, (el) => {
+  el.addEventListener('click', (evt) => {
+    displayHideAnswer(evt, workPlace);
   });
-}
+});
