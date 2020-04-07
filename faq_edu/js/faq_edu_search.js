@@ -253,3 +253,19 @@ const questionList02 = document.createElement('ul');
 questionList02.classList.add('questions-list');
 questionList02.appendChild(fragment02);
 questionBlock02.appendChild(questionList02);
+
+const searchPlace = document.querySelector('.search-area');
+const searchField = searchPlace.querySelector('.search-field');
+const searchButton = searchPlace.querySelector('.search-button');
+
+let searchValue = 0;
+
+searchButton.addEventListener('click', () => {
+  searchValue = searchField.value;
+  const regexp = new RegExp(searchValue, 'i');
+  console.log(regexp);
+  console.log(searchValue);
+  console.log(objecktAccounting[0].question);
+  console.log(objecktAccounting[0].question.includes(searchValue));
+  console.log(regexp.test(objecktAccounting[0].question));
+});
