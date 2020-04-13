@@ -12,11 +12,11 @@ window.cekiContacts = {};
       question: '',
     },
     {
-      name: 'Буяджи Павел Андреевич',
-      foto: 'img/buyadzhi_3x4.png',
-      position: 'Директор ФГБУ «ЦЭКИ»',
+      name: 'Тебеньков Яков Михайлович',
+      foto: 'img/tebenkov_3x4.png',
+      position: 'И.о. директора ФГБУ «ЦЭКИ»',
       phone: '',
-      email: 'pbuyadzhi@ceki.ru',
+      email: 'yatebenkov@ceki.ru',
       question: '',
     },
     {

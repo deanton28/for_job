@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/faq_edu_style.css">
+  <link rel="stylesheet" href="css/faq_edu_search.css">
+  <title>Вопрос-Ответ с поиском</title>
+</head>
+<body>
+  <div class="faq-edu-wrapper">
+    <div class="search-area">
+      <input class="search-field" type="text" name="question-search" value="">
+      <button class="search-button" type="button" name="button">Поиск</button>
+    </div>
+    <div class="choice-block-area">
+      <div class="block-name" data-target=".block-questions_03"><p></p></div>
+      <div class="block-name" data-target=".block-questions_02"><p>Мероприятия по информатизации</p></div>
+      <div class="block-name active" data-target=".block-questions_01"><p>Объект учета</p></div>
+    </div>
+    <div class="bottom-line"></div>
+    <div class="question-area">
+      <div class="question-block block-questions_01" name="OU">
+      </div>
+      <div class="question-block block-questions_02" name="MPI" hidden>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/faq_edu_search.js"></script>
+  <script src="js/faq_edu_mechanics.js"></script>
+
+</body>
