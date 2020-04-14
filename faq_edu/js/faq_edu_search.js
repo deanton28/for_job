@@ -277,7 +277,39 @@ searchButton.addEventListener('click', () => {
   const regexp = new RegExp(searchValue, 'i');
   console.log(regexp);
   console.log(searchValue);
-  console.log(objecktAccounting[0].question);
-  console.log(objecktAccounting[0].question.includes(searchValue));
-  console.log(regexp.test(objecktAccounting[0].question));
+
+  const questionNode = questionPlace.querySelectorAll('.question');
+  console.log(questionNode[0].innerHTML);
+  console.log(regexp.test(questionNode[0].innerHTML));
+
+  for (let i = 0; i < questionNode.length; i += 1) {
+    if (regexp.test(questionNode[i].innerHTML)) {
+      questionNode[i].removeAttribute('hidden');
+    } else {
+      questionNode[i].setAttribute('hidden', 'hidden');
+    }
+  }
+  // console.log(objecktAccounting[0].question);
+  // console.log(objecktAccounting[0].question.toLowerCase().includes(searchValue.toLowerCase()));
+  // console.log(regexp.test(objecktAccounting[0].question));
+  // const filterObjecktAccounting = objecktAccounting.filter((item) => regexp.test(item.question));
+  // console.log(filterObjecktAccounting);
+  //
+  // console.log(questionList01.innerHTML);
+  // questionList01.innerHTML = '';
+  // fragment01 = document.createDocumentFragment();
+  // for (let i = 0; i < filterObjecktAccounting.length; i += 1) {
+  //   const question = document.createElement('li');
+  //   question.innerHTML = `
+  //   <div class="question" data-target=".block_01-answer_${i}">
+  //     ${objecktAccounting[i].question}
+  //   </div>
+  //   <div class="answer block_01-answer_${i}">
+  //     <span class="answer-word">Ответ:</span>
+  //     ${objecktAccounting[i].answer}
+  //   </div>
+  //   `;
+  //   fragment01.appendChild(question);
+  // }
+  // questionList01.appendChild(fragment01);
 });
