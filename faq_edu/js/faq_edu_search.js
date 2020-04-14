@@ -223,93 +223,83 @@ console.log(`Длинна массива с вопросами МПИ: ${eventOn
 console.log(eventOnInformatization);
 
 const questionPlace = document.querySelector('.question-area');
-const questionBlock01 = questionPlace.querySelector('.block-questions_01');
-const questionBlock02 = questionPlace.querySelector('.block-questions_02');
+const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
+const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
 
-const fragment01 = document.createDocumentFragment();
+const fragmentOu = document.createDocumentFragment();
 for (let i = 0; i < objecktAccounting.length; i += 1) {
-  const question = document.createElement('li');
+  const question = document.createElement('div');
+  question.classList.add('question-section');
   question.innerHTML = `
-  <div class="question" data-target=".block_01-answer_${i}">
+  <div class="question" data-target=".block_OU-answer_${i}">
     ${objecktAccounting[i].question}
   </div>
-  <div class="answer block_01-answer_${i}">
+  <div class="answer block_OU-answer_${i}">
     <span class="answer-word">Ответ:</span>
     ${objecktAccounting[i].answer}
   </div>
+  <div class="circle">
+    <div class="circle_circle">
+      <div class="circle_point">
+      </div>
+    </div>
+  </div>
   `;
-  fragment01.appendChild(question);
+  fragmentOu.appendChild(question);
 }
 
-const questionList01 = document.createElement('ul');
-questionList01.classList.add('questions-list');
-questionList01.appendChild(fragment01);
-questionBlock01.appendChild(questionList01);
+const questionListOu = document.createElement('div');
+questionListOu.classList.add('questions-list');
+questionListOu.appendChild(fragmentOu);
+questionBlockOu.appendChild(questionListOu);
 
-const fragment02 = document.createDocumentFragment();
+const fragmentMpi = document.createDocumentFragment();
 for (let i = 0; i < eventOnInformatization.length; i += 1) {
-  const question = document.createElement('li');
+  const question = document.createElement('div');
+  question.classList.add('question-section');
   question.innerHTML = `
-  <div class="question" data-target=".block_02-answer_${i}">
+  <div class="question" data-target=".block_MPI-answer_${i}">
     ${eventOnInformatization[i].question}
   </div>
-  <div class="answer block_02-answer_${i}">
+  <div class="answer block_MPI-answer_${i}">
     <span class="answer-word">Ответ:</span>
     ${eventOnInformatization[i].answer}
   </div>
+  <div class="circle">
+    <div class="circle_circle">
+      <div class="circle_point">
+      </div>
+    </div>
+  </div>
   `;
-  fragment02.appendChild(question);
+  fragmentMpi.appendChild(question);
 }
 
-const questionList02 = document.createElement('ul');
-questionList02.classList.add('questions-list');
-questionList02.appendChild(fragment02);
-questionBlock02.appendChild(questionList02);
+const questionListMpi = document.createElement('div');
+questionListMpi.classList.add('questions-list');
+questionListMpi.appendChild(fragmentMpi);
+questionBlockMpi.appendChild(questionListMpi);
 
 const searchPlace = document.querySelector('.search-area');
 const searchField = searchPlace.querySelector('.search-field');
 const searchButton = searchPlace.querySelector('.search-button');
 
-let searchValue = 0;
-
-searchButton.addEventListener('click', () => {
-  searchValue = searchField.value;
+searchButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  const searchValue = searchField.value;
   const regexp = new RegExp(searchValue, 'i');
   console.log(regexp);
   console.log(searchValue);
 
-  const questionNode = questionPlace.querySelectorAll('.question');
-  console.log(questionNode[0].innerHTML);
-  console.log(regexp.test(questionNode[0].innerHTML));
+  const questionSections = questionPlace.querySelectorAll('.question-section');
+  console.log(questionSections[0].querySelector('.question').innerHTML);
+  console.log(regexp.test(questionSections[0].querySelector('.question').innerHTML));
 
-  for (let i = 0; i < questionNode.length; i += 1) {
-    if (regexp.test(questionNode[i].innerHTML)) {
-      questionNode[i].removeAttribute('hidden');
+  for (let i = 0; i < questionSections.length; i += 1) {
+    if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
+      questionSections[i].removeAttribute('hidden');
     } else {
-      questionNode[i].setAttribute('hidden', 'hidden');
+      questionSections[i].setAttribute('hidden', 'hidden');
     }
   }
-  // console.log(objecktAccounting[0].question);
-  // console.log(objecktAccounting[0].question.toLowerCase().includes(searchValue.toLowerCase()));
-  // console.log(regexp.test(objecktAccounting[0].question));
-  // const filterObjecktAccounting = objecktAccounting.filter((item) => regexp.test(item.question));
-  // console.log(filterObjecktAccounting);
-  //
-  // console.log(questionList01.innerHTML);
-  // questionList01.innerHTML = '';
-  // fragment01 = document.createDocumentFragment();
-  // for (let i = 0; i < filterObjecktAccounting.length; i += 1) {
-  //   const question = document.createElement('li');
-  //   question.innerHTML = `
-  //   <div class="question" data-target=".block_01-answer_${i}">
-  //     ${objecktAccounting[i].question}
-  //   </div>
-  //   <div class="answer block_01-answer_${i}">
-  //     <span class="answer-word">Ответ:</span>
-  //     ${objecktAccounting[i].answer}
-  //   </div>
-  //   `;
-  //   fragment01.appendChild(question);
-  // }
-  // questionList01.appendChild(fragment01);
 });
