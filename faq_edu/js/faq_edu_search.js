@@ -205,6 +205,18 @@ const eventOnInformatization = [
     question: 'На каком этапе необходимо делать детализацию в мероприятии по информатизации?',
     answer: 'Детализация в мероприятии по информатизации  делается в рамках второго этапа согласования плана информатизации, согласно п. 23 правил подготовки планов информатизации государственных органов и отчетов об их выполнении, утверждённых постановлением Правительства Российской Федерации от 24 мая 2010 г. № 365',
   },
+  {
+    question: 'Куда нужно прикладывать приказ об утверждении нормативных затрат?',
+    answer: 'Приказ об утверждении нормативных затрат  можно разместить в 2 вариантах:<br>1. В мероприятие по информатизации в раздел "Документ-основание". Обращаем ваше внимание, что в этом случае необходимо в закупке, в которой используется для обоснования данный приказ, отразить название документа и где он расположен.<br>2. К каждой закупке, где используются расчеты из приказа об утверждении нормативных затрат.',
+  },
+  {
+    question: 'Как сделать, чтобы в закупке использовался код ОКПД 95.11, а в детализации код ОКПД 34.11?',
+    answer: 'В данной ситуации указать код 34.11 технически не получится, т.к. детализация возможна только в пределах выгруженного кода из системы "Электронный бюджет" (95.11).<br>При необходимости создания закупки с кодом, отличным от кода закупки следует создать новую закупку',
+  },
+  {
+    question: 'Какие приоритетные направления необходимо указать при создании мероприятия по информатизации направленного на развитие 10 классификационной категории?',
+    answer: 'В мероприятии по информатизации направленного на развитие 10 классификационной категории необходимо указать:<ul><li>1 приоритетное направление «Использование информационно-коммуникационных технологий для оптимизации процедур и повышения качества предоставления государственных услуг и исполнения государственных функций, в том числе с применением механизмов получения от граждан и организаций в электронном виде информации о качестве взаимодействия с федеральными органами исполнительной власти и органами управления государственными внебюджетными фондами»</li><li>4 приоритетное направление «Защита информации, содержащейся в государственных информационных системах, и обеспечение информационной безопасности при использовании информационно-коммуникационных технологий в деятельности федеральных органов исполнительной власти и органов управления государственными внебюджетными фондами».</li></ul>Также рекомендуется рассмотреть возможность отнесения мероприятия к 3 и 5 приоритетным направлениям',
+  },
 ];
 
 console.log(`Длинна массива с вопросами МПИ: ${eventOnInformatization.length}.  Должно быть 18`);
@@ -265,7 +277,39 @@ searchButton.addEventListener('click', () => {
   const regexp = new RegExp(searchValue, 'i');
   console.log(regexp);
   console.log(searchValue);
-  console.log(objecktAccounting[0].question);
-  console.log(objecktAccounting[0].question.includes(searchValue));
-  console.log(regexp.test(objecktAccounting[0].question));
+
+  const questionNode = questionPlace.querySelectorAll('.question');
+  console.log(questionNode[0].innerHTML);
+  console.log(regexp.test(questionNode[0].innerHTML));
+
+  for (let i = 0; i < questionNode.length; i += 1) {
+    if (regexp.test(questionNode[i].innerHTML)) {
+      questionNode[i].removeAttribute('hidden');
+    } else {
+      questionNode[i].setAttribute('hidden', 'hidden');
+    }
+  }
+  // console.log(objecktAccounting[0].question);
+  // console.log(objecktAccounting[0].question.toLowerCase().includes(searchValue.toLowerCase()));
+  // console.log(regexp.test(objecktAccounting[0].question));
+  // const filterObjecktAccounting = objecktAccounting.filter((item) => regexp.test(item.question));
+  // console.log(filterObjecktAccounting);
+  //
+  // console.log(questionList01.innerHTML);
+  // questionList01.innerHTML = '';
+  // fragment01 = document.createDocumentFragment();
+  // for (let i = 0; i < filterObjecktAccounting.length; i += 1) {
+  //   const question = document.createElement('li');
+  //   question.innerHTML = `
+  //   <div class="question" data-target=".block_01-answer_${i}">
+  //     ${objecktAccounting[i].question}
+  //   </div>
+  //   <div class="answer block_01-answer_${i}">
+  //     <span class="answer-word">Ответ:</span>
+  //     ${objecktAccounting[i].answer}
+  //   </div>
+  //   `;
+  //   fragment01.appendChild(question);
+  // }
+  // questionList01.appendChild(fragment01);
 });
