@@ -59,45 +59,45 @@
   z-index: 1000;
 }
 
-.question-block {
+.block-question {
   margin-bottom: 40px;
   overflow: hidden;
   transition: height 0.5s;
 }
 
-.question-block > ul {
+.block-question > .questions-list {
   margin: 0 0 0 20px;
   padding: 0 0 0 23px;
   list-style: none;
   border-left: 2px solid #cacaca;
 }
 
-.question-block > ul > li {
+.block-question > .questions-list > .question-section {
   position: relative;
   margin-bottom: 5px;
 }
 
-.question-block > ul > li:nth-child(odd) .question {
+.block-question > .questions-list > .question-section:nth-child(odd) .question {
   background: rgba(36,139,195,0.1);
 }
 
-.question-block > ul > li:nth-child(even) .question {
+.block-question > .questions-list > .question-section:nth-child(even) .question {
   background: rgba(8,98,140,0.05);
 }
 
-.question-block .question,
-.question-block .answer {
+.block-question .question,
+.block-question .answer {
   padding: 10px;
 }
 
-.question-block .question {
+.block-question .question {
   position: relative;
   border: 2px solid #cacaca;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.question-block .circle {
+.block-question .circle {
   position: absolute;
   top: 5px;
   left: -40px;
@@ -121,7 +121,7 @@
   border-radius: 50%;
 }
 
-.question-block .answer {
+.block-question .answer {
   display: none;
   height: 0;
   overflow: hidden;
@@ -129,7 +129,7 @@
   transition: height 0.5s;
 }
 
-.question-block .answer.visible {
+.block-question .answer.visible {
   display: block;
 }
 
