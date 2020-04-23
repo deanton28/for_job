@@ -1,3 +1,7 @@
+const keyCode = {
+  ESC: 27,
+};
+
 const ceki = document.querySelector('.contacts-ceki');
 const region = document.querySelector('.contacts-region');
 const contactsPlase = document.querySelector('.contacts-ceki_wrapper');
@@ -163,4 +167,11 @@ const renderContacts = (evt) => {
 
 switcher.addEventListener('click', (evt) => {
   renderContacts(evt);
+});
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.keyCode === keyCode.ESC) {
+    popup.innerHTML = '';
+    popup.setAttribute('hidden', 'hidden');
+  }
 });
