@@ -12,7 +12,7 @@ div.faq-region-wrapper {
   box-sizing: border-box;
 }
 
-.faq-region-wrapper .sub-block_name {
+.faq-region-wrapper .sub-block-title {
   margin-left: 55px;
   padding: 15px 20px 0 20px;
   font-weight: bold;
@@ -36,7 +36,7 @@ div.faq-region-wrapper {
   transform: rotate(45deg);
 }
 
-.faq-region-wrapper [class^="block-questions_"] {
+.faq-region-wrapper div[class^="block-questions_"] {
   margin: 0;
   padding: 20px;
   border: 3px solid #555;
