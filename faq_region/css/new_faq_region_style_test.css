@@ -16,13 +16,11 @@ div.faq-region-wrapper {
   margin-left: 55px;
   padding: 15px 20px 0 20px;
   font-weight: bold;
-  /* color: #0c6692; */
   cursor: pointer;
   box-sizing: border-box;
 }
 
 .faq-region-wrapper .question-block {
-  /* padding: 20px; */
   border-left: 1px solid #cacaca;
 }
 
@@ -36,33 +34,19 @@ div.faq-region-wrapper {
   transform: rotate(45deg);
 }
 
-.faq-region-wrapper div[class^="block-questions_"] {
+.faq-region-wrapper .block-questions {
+  display: none;
   margin: 0;
   padding: 20px;
   border: 3px solid #555;
 }
 
-.faq-region-wrapper [class^="block-questions_"] .question-area {
+.faq-region-wrapper .question-area {
   margin-top: -1px;
   border: 1px dashed #e6e6e6;
 }
 
-.faq-region-wrapper [class^="block-questions_"] .question-area:nth-child(odd) {
-  background: #f5f5f5;
-}
-
-.faq-region-wrapper ul {
-  margin: 0;
-  padding: 20px;
-  list-style: none;
-}
-
-.faq-region-wrapper ul li {
-  margin-top: -1px;
-  border: 1px dashed #e6e6e6;
-}
-
-.faq-region-wrapper ul li:nth-child(odd) {
+.faq-region-wrapper .question-area:nth-child(odd) {
   background: #f5f5f5;
 }
 
@@ -81,7 +65,7 @@ div.faq-region-wrapper {
   background: #ffffff;
 }
 
-.faq-region-wrapper .answer.visible {
+.faq-region-wrapper .visible {
   display: block;
 }
 
@@ -90,10 +74,6 @@ div.faq-region-wrapper {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
-/* .faq-region-wrapper .question:hover  + .answer {
-  display: block;
-} */
 
 .faq-region-wrapper .visible .list-type {
   transform: rotate(225deg);
