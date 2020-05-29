@@ -120,10 +120,6 @@ const objecktAccounting = [
     answer: 'Заведение объекта учета во ФГИС КИ  зависит от его дальнейшего финансирования и от политики ведения объектов учета, принятой в организации. Можно выделить несколько наиболее часто встречаемых вариантов:<ol><li>Если центральный аппарат дальше будет обслуживать оборудование (т.е. заключать ГК на его обслуживание), переданное в подведомственное учреждение, то объект учета обычно создает центральный аппарат.</li><li>Если деньги на обслуживание оборудования будет тратить подведомственное учреждение, то объект учета обычно создает подведомственное учреждение. При этом в составе данного объекта учета следует отражать все контракты, связанные с закупаемым оборудованием, в том числе централизованные контракты.</li></ol>',
   },
 ];
-
-console.log(`Длинна массива с вопросами ОУ: ${objecktAccounting.length}.  Должно быть 26`);
-console.log(objecktAccounting);
-
 const eventOnInformatization = [
   {
     question: 'Какими нормативными документами следует руководствоваться при создании мероприятия по информатизации на 1 этапе во ФГИС КИ?',
@@ -247,9 +243,6 @@ const eventOnInformatization = [
   },
 ];
 
-console.log(`Длинна массива с вопросами МПИ: ${eventOnInformatization.length}.  Должно быть 18`);
-console.log(eventOnInformatization);
-
 const questionPlace = document.querySelector('.question-area');
 const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
 const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
@@ -309,19 +302,14 @@ questionListMpi.appendChild(fragmentMpi);
 questionBlockMpi.appendChild(questionListMpi);
 
 const searchPlace = document.querySelector('.search-area');
-const searchField = searchPlace.querySelector('.search-field');
+const searchField = searchPlace.querySelector('.search-value');
 const searchButton = searchPlace.querySelector('.search-button');
 
 searchButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   const searchValue = searchField.value;
-  const regexp = new RegExp(searchValue, 'i');
-  console.log(regexp);
-  console.log(searchValue);
-
+  const regexp = new RegExp((searchValue.match(/[а-я]{4,}|\d{2,}/gi) ? searchValue.match(/[а-я]{4,}|\d{2,}/gi).join('|') : ''), 'i');
   const questionSections = questionPlace.querySelectorAll('.question-section');
-  console.log(questionSections[0].querySelector('.question').innerHTML);
-  console.log(regexp.test(questionSections[0].querySelector('.question').innerHTML));
 
   for (let i = 0; i < questionSections.length; i += 1) {
     if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
@@ -330,4 +318,15 @@ searchButton.addEventListener('click', (evt) => {
       questionSections[i].setAttribute('hidden', 'hidden');
     }
   }
+
+  // ------Работаем с RegExp----
+  console.log(searchValue ? 'true' : 'false');
+  console.log(RegExp(searchValue, 'i'));
+  const splitSearchValue = searchValue.split(' ');
+  console.log(splitSearchValue);
+  const test = searchValue.match(/[а-я]{4,}|\d+/gi);
+  console.log(test);
+  const testRegexp = new RegExp((searchValue.match(/[а-я]{4,}|\d{2,}/gi) ? searchValue.match(/[а-я]{4,}|\d{2,}/gi).join('|') : ''), 'i');
+  console.log(testRegexp);
+  // ---------------------------
 });
