@@ -23,6 +23,6 @@
            "ignorePropertyModificationsFor": ["exports", "element"]
         }
       ],
-      "unicode-bom": ["error", "always"]
+      "unicode-bom": ["error", "never"]
     }
 }
