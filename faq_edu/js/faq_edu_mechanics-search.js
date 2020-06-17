@@ -1,4 +1,4 @@
-﻿const forEach = (array, collback) => {
+const forEach = (array, collback) => {
   for (let i = 0; i < array.length; i += 1) {
     collback(array[i], i);
   }

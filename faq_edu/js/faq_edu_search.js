@@ -1,4 +1,33 @@
-﻿const departamentalProgrammDigitalTransfprmation = [
+const renderQuestionsList = (questions, code, block) => {
+  const fragment = document.createDocumentFragment();
+  for (let i = 0; i < questions.length; i += 1) {
+    const question = document.createElement('div');
+    question.classList.add('question-section');
+    question.innerHTML = `
+    <div class="question" data-target=".block_${code}-answer_${i}">
+      ${questions[i].question}
+    </div>
+    <div class="answer block_${code}-answer_${i}">
+      <span class="answer-word">Ответ:</span>
+      ${questions[i].answer}
+    </div>
+    <div class="circle">
+      <div class="circle_circle">
+        <div class="circle_point">
+        </div>
+      </div>
+    </div>
+    `;
+    fragment.appendChild(question);
+  }
+
+  const questionList = document.createElement('div');
+  questionList.classList.add('questions-list');
+  questionList.appendChild(fragment);
+  block.appendChild(questionList);
+};
+
+const departamentalProgrammDigitalTransfprmation = [
   {
     question: 'Где можно получить шаблон ведомственной программы цифровой трансформации?',
     answer: 'Шаблон ведомственной программы цифровой трансформации представлен в разделе «Библиотека» на портале, а также его можно запросить у курирующего ФОИВ аккаунт менеджера.',
@@ -322,86 +351,9 @@ const questionBlockVPCT = questionPlace.querySelector('.block-questions_VPCT');
 const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
 const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
 
-const fragmentVPCT = document.createDocumentFragment();
-for (let i = 0; i < departamentalProgrammDigitalTransfprmation.length; i += 1) {
-  const question = document.createElement('div');
-  question.classList.add('question-section');
-  question.innerHTML = `
-  <div class="question" data-target=".block_VPCT-answer_${i}">
-    ${departamentalProgrammDigitalTransfprmation[i].question}
-  </div>
-  <div class="answer block_VPCT-answer_${i}">
-    <span class="answer-word">Ответ:</span>
-    ${departamentalProgrammDigitalTransfprmation[i].answer}
-  </div>
-  <div class="circle">
-    <div class="circle_circle">
-      <div class="circle_point">
-      </div>
-    </div>
-  </div>
-  `;
-  fragmentVPCT.appendChild(question);
-}
-
-const questionListVPCT = document.createElement('div');
-questionListVPCT.classList.add('questions-list');
-questionListVPCT.appendChild(fragmentVPCT);
-questionBlockVPCT.appendChild(questionListVPCT);
-
-const fragmentOu = document.createDocumentFragment();
-for (let i = 0; i < objecktAccounting.length; i += 1) {
-  const question = document.createElement('div');
-  question.classList.add('question-section');
-  question.innerHTML = `
-  <div class="question" data-target=".block_OU-answer_${i}">
-    ${objecktAccounting[i].question}
-  </div>
-  <div class="answer block_OU-answer_${i}">
-    <span class="answer-word">Ответ:</span>
-    ${objecktAccounting[i].answer}
-  </div>
-  <div class="circle">
-    <div class="circle_circle">
-      <div class="circle_point">
-      </div>
-    </div>
-  </div>
-  `;
-  fragmentOu.appendChild(question);
-}
-
-const questionListOu = document.createElement('div');
-questionListOu.classList.add('questions-list');
-questionListOu.appendChild(fragmentOu);
-questionBlockOu.appendChild(questionListOu);
-
-const fragmentMpi = document.createDocumentFragment();
-for (let i = 0; i < eventOnInformatization.length; i += 1) {
-  const question = document.createElement('div');
-  question.classList.add('question-section');
-  question.innerHTML = `
-  <div class="question" data-target=".block_MPI-answer_${i}">
-    ${eventOnInformatization[i].question}
-  </div>
-  <div class="answer block_MPI-answer_${i}">
-    <span class="answer-word">Ответ:</span>
-    ${eventOnInformatization[i].answer}
-  </div>
-  <div class="circle">
-    <div class="circle_circle">
-      <div class="circle_point">
-      </div>
-    </div>
-  </div>
-  `;
-  fragmentMpi.appendChild(question);
-}
-
-const questionListMpi = document.createElement('div');
-questionListMpi.classList.add('questions-list');
-questionListMpi.appendChild(fragmentMpi);
-questionBlockMpi.appendChild(questionListMpi);
+renderQuestionsList(departamentalProgrammDigitalTransfprmation, 'VPCT', questionBlockVPCT);
+renderQuestionsList(objecktAccounting, 'OU', questionBlockOu);
+renderQuestionsList(eventOnInformatization, 'MPI', questionBlockMpi);
 
 const searchPlace = document.querySelector('.search-area');
 const searchField = searchPlace.querySelector('.search-value');
