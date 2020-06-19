@@ -52,3 +52,13 @@
   background-size: 50%, cover;
   cursor: pointer;
 }
+
+/*Стили для фильтра*/
+
+.search-area .type-description {
+  cursor: pointer;
+}
+
+.search-area .type-description.active {
+  text-decoration: underline;
+}
