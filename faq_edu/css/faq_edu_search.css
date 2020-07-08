@@ -54,6 +54,14 @@
 }
 
 /*Стили для фильтра*/
+:root {
+  --red: #fd1a15;
+  --green: #007177;
+  --btnWidth: 116px;
+  --switchWidth: 60px;
+  --switchHeight: 130px;
+  --padding: 7px;
+}
 
 .search-area .type-description {
   cursor: pointer;
@@ -61,4 +69,47 @@
 
 .search-area .type-description.active {
   text-decoration: underline;
+}
+
+.search-area .search-type {
+    display: none;
+}
+
+.search-area .search-type + label {
+    cursor: pointer;
+    /* text-indent: -9999px; */
+    width: 60px;
+    height: 30px;
+    background: linear-gradient(to right, var(--red) 0, #fc8b34 45%, #7fd03e 55%, var(--green) 100%) 0 0;
+    background-size: calc(var(--switchWidth) * 2 + 50px) 100%;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.search-area .search-type + label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: all 500ms ease;
+}
+
+.search-area .search-type:checked + label {
+    /* background: #bada55; */
+    background-position-x: calc((var(--switchWidth) + 50px) * -1);
+}
+
+.search-area .search-type:checked + label:after {
+    right: calc(100% - 5px);
+    transform: translateX(100%);
+}
+
+.search-area .search-type + label:active:after {
+    width: 40px;
 }

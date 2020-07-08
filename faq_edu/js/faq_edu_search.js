@@ -67,6 +67,7 @@ separate.addEventListener('click', () => {
 
   const searchValue = searchField.value;
 
+  console.log(`Состояние чекбокса - ${checkbox.checked}`);
   console.log(searchValue);
   console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
 
@@ -96,6 +97,7 @@ together.addEventListener('click', () => {
 
   const searchValue = searchField.value;
 
+  console.log(`Состояние чекбокса - ${checkbox.checked}`);
   console.log(searchValue);
   console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
 
@@ -117,10 +119,13 @@ together.addEventListener('click', () => {
     }
   }
 });
+//------------------------------------------------
+
 searchButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   const searchValue = searchField.value;
 
+  console.log(`Состояние чекбокса - ${checkbox.checked}`);
   console.log(searchValue);
   console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
 
