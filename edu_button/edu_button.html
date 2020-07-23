@@ -1,0 +1,70 @@
+﻿<%
+mode = curMode;
+
+//--Собираем переменные Т.к. переменная получает строки, то для ID раздела портала сразу переводим в число
+button1 = Int(tools_web.get_web_param(curParams, 'button_1', '', true));
+button1DisplayAttention = tools_web.get_web_param(curParams, 'button_1.attention', '0', true);
+button2 = Int(tools_web.get_web_param(curParams, 'button_2', '', true));
+button2DisplayAttention = tools_web.get_web_param(curParams, 'button_2.attention', '0', true);
+button3 = Int(tools_web.get_web_param(curParams, 'button_3', '', true));
+button3DisplayAttention = tools_web.get_web_param(curParams, 'button_3.attention', '0', true);
+
+//--Создадим функцию генерирующую данные кнопки для добавленя в код HTML
+function getButtonData(data) {
+//--Откроем карточку раздела документа
+  buttonTopElem = OpenDoc(UrlFromDocID(data)).TopElem;
+//--Из TopElem карточки раздела берем нужные данные для кноки
+  buttonData = {
+    name: buttonTopElem.name,
+	image: 'download_file.html?file_id=' + buttonTopElem.resource_id,
+	link: (buttonTopElem.attributes.template ? buttonTopElem.attributes.template : 'view_doc.html?mode=doc') + '&doc_id=' + buttonTopElem.id,
+	target: '_self',
+  };
+//--Пропишем вариант на случай если в разделе указано "Переходить по ссылке"  
+  if (buttonTopElem.attributes.is_link) {
+    if (buttonTopElem.attributes.link_href) {
+	  buttonData.link = buttonTopElem.attributes.link_href;
+	};
+	if (buttonTopElem.attributes.link_target) {
+	  buttonData.target = StrLowerCase(buttonTopElem.attributes.link_target);
+	};
+  };
+  
+  return buttonData;
+};
+
+//--Генерим данные для всех 3-х кнопок
+buttonData1 = getButtonData(button1);
+buttonData2 = getButtonData(button2);
+buttonData3 = getButtonData(button3);
+%>
+
+<link id="style" rel="stylesheet" href="custom_template/edu_button/css/edu_button_css.css">
+
+<style>
+  .menu_wrapper .menu-item.item_1::after {
+  display: <%=button1DisplayAttention == '1' ? 'inline-block' : 'none'%>;
+  }
+
+  .menu_wrapper .menu-item.item_2::after {
+  display: <%=button2DisplayAttention == '1' ? 'inline-block' : 'none'%>;
+  }
+
+  .menu_wrapper .menu-item.item_3::after {
+  display: <%=button3DisplayAttention == '1' ? 'inline-block' : 'none'%>;
+  }
+</style>
+
+<div class="menu_wrapper">
+  <div class="menu-items_place">
+    <a href="<%=buttonData1.link%>" target="<%=buttonData1.target%>" class="menu-item item_1" style="background-image: url(<%=buttonData1.image%>)">
+      <span class="item-name"><%=buttonData1.name%></span>
+    </a>
+    <a href="<%=buttonData2.link%>" target="<%=buttonData2.target%>" class="menu-item item_2" style="background-image: url(<%=buttonData2.image%>)">
+      <span class="item-name"><%=buttonData2.name%></span>
+    </a>
+    <a href="<%=buttonData3.link%>" target="<%=buttonData3.target%>" class="menu-item item_3" style="background-image: url(<%=buttonData3.image%>)">
+      <span class="item-name"><%=buttonData3.name%></span>
+    </a>
+  </div>
+</div>
