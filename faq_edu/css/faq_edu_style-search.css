@@ -97,6 +97,10 @@
   cursor: pointer;
 }
 
+.block-question .question.new {
+  font-weight: bold;
+}
+
 .block-question .circle {
   position: absolute;
   top: 5px;
@@ -112,6 +116,10 @@
   border-radius: 50%;
   box-sizing: border-box;
 }
+
+/* .circle .circle_circle.new {
+  background: linear-gradient(90deg, rgba(0, 38, 76, 1) 20%, rgba(217, 145, 22, 1) 50%, rgba(0, 38, 76, 1) 80%);
+} */
 
 .circle .circle_point {
   margin:auto;

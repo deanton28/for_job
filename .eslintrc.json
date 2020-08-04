@@ -19,10 +19,9 @@
       "no-param-reassign": [
         "error",
         {
-           "props": true,
-           "ignorePropertyModificationsFor": ["exports", "element"]
+           "props": false
         }
       ],
-      "unicode-bom": ["error", "always"]
+      "unicode-bom": ["error", "never"]
     }
 }
