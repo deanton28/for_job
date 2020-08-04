@@ -27,152 +27,85 @@ const renderQuestionsList = (questions, code, block) => {
   block.appendChild(questionList);
 };
 
+const setActiveDescription = (checkbox, descriptionOne, descriptionTwo) => {
+  descriptionOne.classList.toggle('active', checkbox.checked);
+  if (descriptionTwo) {
+    descriptionTwo.classList.toggle('active', !checkbox.checked);
+  }
+};
+
+const displaySearchField = (searchFrase, checkbox, checkNew, dataList) => {
+  const searchValue = searchFrase.value;
+
+  let regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
+  if (!checkbox.checked) {
+    regexp = new RegExp(searchValue, 'i');
+  }
+
+  for (let i = 0; i < dataList.length; i += 1) {
+    if (checkNew.checked) {
+      if (dataList[i].classList.contains('new') && regexp.test(dataList[i].innerHTML)) {
+        dataList[i].removeAttribute('hidden');
+      } else {
+        dataList[i].setAttribute('hidden', 'hidden');
+      }
+    } else if (regexp.test(dataList[i].innerHTML)) {
+      dataList[i].removeAttribute('hidden');
+    } else {
+      dataList[i].setAttribute('hidden', 'hidden');
+    }
+  }
+};
+
 const questionPlace = document.querySelector('.question-area');
 const questionBlockVPCT = questionPlace.querySelector('.block-questions_VPCT');
 const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
 const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
+const questionsList = questionPlace.getElementsByClassName('question');
 
 const searchPlace = document.querySelector('.search-area');
 const searchField = searchPlace.querySelector('.search-value');
 const searchButton = searchPlace.querySelector('.search-button');
+const separate = searchPlace.querySelector('.separete');
+const together = searchPlace.querySelector('.together');
+const checkType = searchPlace.querySelector('#search-type');
+
+const checkNew = searchPlace.querySelector('#search-new');
+const onlyNew = searchPlace.querySelector('.only-new');
 
 renderQuestionsList(window.questions.departamentalProgrammDigitalTransfprmation, 'VPCT', questionBlockVPCT);
 renderQuestionsList(window.questions.objecktAccounting, 'OU', questionBlockOu);
 renderQuestionsList(window.questions.eventOnInformatization, 'MPI', questionBlockMpi);
 
-// searchButton.addEventListener('click', (evt) => {
-//   evt.preventDefault();
-//   const searchValue = searchField.value;
-//   const regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
-//   const questionSections = questionPlace.querySelectorAll('.question-section');
-//
-//   for (let i = 0; i < questionSections.length; i += 1) {
-//     if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
-//       questionSections[i].removeAttribute('hidden');
-//     } else {
-//       questionSections[i].setAttribute('hidden', 'hidden');
-//     }
-//   }
-// });
-
-// Работаем с radio----------------------------------
-const separate = searchPlace.querySelector('.separete');
-const together = searchPlace.querySelector('.together');
-const checkbox = searchPlace.querySelector('input[type=checkbox]');
+searchButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  displaySearchField(searchField, checkType, checkNew, questionsList);
+});
 
 separate.addEventListener('click', () => {
-  checkbox.checked = true;
-  separate.classList.toggle('active', checkbox.checked);
-  together.classList.toggle('active', !checkbox.checked);
-
-  const searchValue = searchField.value;
-
-  console.log(`Состояние чекбокса - ${checkbox.checked}`);
-  console.log(searchValue);
-  console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
-
-  let regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
-
-  if (!checkbox.checked) {
-    regexp = new RegExp(searchValue, 'i');
-  }
-
-  console.log(regexp);
-
-  const questionSections = questionPlace.querySelectorAll('.question-section');
-
-  for (let i = 0; i < questionSections.length; i += 1) {
-    if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
-      questionSections[i].removeAttribute('hidden');
-    } else {
-      questionSections[i].setAttribute('hidden', 'hidden');
-    }
-  }
+  checkType.checked = true;
+  setActiveDescription(checkType, separate, together);
+  displaySearchField(searchField, checkType, checkNew, questionsList);
 });
 
 together.addEventListener('click', () => {
-  checkbox.checked = false;
-  separate.classList.toggle('active', checkbox.checked);
-  together.classList.toggle('active', !checkbox.checked);
-
-  const searchValue = searchField.value;
-
-  console.log(`Состояние чекбокса - ${checkbox.checked}`);
-  console.log(searchValue);
-  console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
-
-  let regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
-
-  if (!checkbox.checked) {
-    regexp = new RegExp(searchValue, 'i');
-  }
-
-  console.log(regexp);
-
-  const questionSections = questionPlace.querySelectorAll('.question-section');
-
-  for (let i = 0; i < questionSections.length; i += 1) {
-    if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
-      questionSections[i].removeAttribute('hidden');
-    } else {
-      questionSections[i].setAttribute('hidden', 'hidden');
-    }
-  }
+  checkType.checked = false;
+  setActiveDescription(checkType, separate, together);
+  displaySearchField(searchField, checkType, checkNew, questionsList);
 });
 
-checkbox.addEventListener('change', () => {
-  separate.classList.toggle('active', checkbox.checked);
-  together.classList.toggle('active', !checkbox.checked);
-
-  const searchValue = searchField.value;
-
-  console.log(`Состояние чекбокса - ${checkbox.checked}`);
-  console.log(searchValue);
-  console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
-
-  let regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
-
-  if (!checkbox.checked) {
-    regexp = new RegExp(searchValue, 'i');
-  }
-
-  console.log(regexp);
-
-  const questionSections = questionPlace.querySelectorAll('.question-section');
-
-  for (let i = 0; i < questionSections.length; i += 1) {
-    if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
-      questionSections[i].removeAttribute('hidden');
-    } else {
-      questionSections[i].setAttribute('hidden', 'hidden');
-    }
-  }
+checkType.addEventListener('change', () => {
+  setActiveDescription(checkType, separate, together);
+  displaySearchField(searchField, checkType, checkNew, questionsList);
 });
-//------------------------------------------------
 
-searchButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  const searchValue = searchField.value;
+onlyNew.addEventListener('click', () => {
+  checkNew.checked = !checkNew.checked;
+  setActiveDescription(checkNew, onlyNew);
+  displaySearchField(searchField, checkType, checkNew, questionsList);
+});
 
-  console.log(`Состояние чекбокса - ${checkbox.checked}`);
-  console.log(searchValue);
-  console.log(searchValue.match(/[а-я]{3,}|\d{2,}/gi));
-
-  let regexp = new RegExp((searchValue.match(/[а-я]{3,}|\d{2,}/gi) ? searchValue.match(/[а-я]{3,}|\d{2,}/gi).join('|') : ''), 'i');
-
-  if (!checkbox.checked) {
-    regexp = new RegExp(searchValue, 'i');
-  }
-
-  console.log(regexp);
-
-  const questionSections = questionPlace.querySelectorAll('.question-section');
-
-  for (let i = 0; i < questionSections.length; i += 1) {
-    if (regexp.test(questionSections[i].querySelector('.question').innerHTML)) {
-      questionSections[i].removeAttribute('hidden');
-    } else {
-      questionSections[i].setAttribute('hidden', 'hidden');
-    }
-  }
+checkNew.addEventListener('change', () => {
+  setActiveDescription(checkNew, onlyNew);
+  displaySearchField(searchField, checkType, checkNew, questionsList);
 });

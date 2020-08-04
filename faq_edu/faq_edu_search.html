@@ -14,9 +14,17 @@
         <button class="search-button" name="search-button"></button>
       </div>
       <div class="search-options">
-        <span class="type-description separete active">Искать слова по отдельности</span>
-        <input class="search-type" id="search-type" type="checkbox" name="search-type" checked><label for="search-type"></label>
-        <span class="type-description together">Искать фразу полностью</span>
+        <div class="options-area type">
+          <span class="type-description separete active">Искать слова по отдельности</span>
+          <input class="search-type" id="search-type" type="checkbox" name="search-type" checked><label for="search-type"></label>
+          <span class="type-description together">Искать фразу полностью</span>
+        </div>
+        <div class="options-area display-new">
+          <div class="checkbox-wrapper">
+            <input class="search-new" id="search-new" type="checkbox" name="search-new"><label for="search-new"></label>
+          </div>
+          <span class="type-description only-new">Показать только новые</span>
+        </div>
       </div>
     </form>
     <div class="choice-block-area">

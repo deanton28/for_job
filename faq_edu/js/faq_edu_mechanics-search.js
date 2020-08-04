@@ -4,13 +4,6 @@ const forEach = (array, collback) => {
   }
 };
 
-// const addElementCircle = (parentElement) => {
-//   const element = document.createElement('div');
-//   element.classList.add('circle');
-//   element.innerHTML = '<div class="circle_circle"><div class="circle_point"></div></div>';
-//   parentElement.appendChild(element);
-// };
-
 const removeClass = (element, className) => {
   element.classList.remove(className);
 };
@@ -57,11 +50,9 @@ const displayHideAnswer = (event, node) => {
 const workPlace = document.querySelector('.faq-edu-wrapper');
 const blockList = workPlace.querySelectorAll('.block-name');
 const questionBlockList = workPlace.querySelectorAll('.block-question');
-// const questions = workPlace.querySelectorAll('.questions-list > li');
 const questionList = workPlace.querySelectorAll('.question');
 const answerList = workPlace.querySelectorAll('.answer');
 
-// forEach(questions, addElementCircle);
 forEach(blockList, (block) => {
   block.addEventListener('click', (evt) => {
     displaySelectedBlockQuestions(evt, workPlace, blockList, block, questionBlockList, answerList);
