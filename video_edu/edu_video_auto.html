@@ -1,0 +1,14 @@
+<h1>Меню для КИ с автоматическим изменением раздеов</h1>
+
+<%
+mode = curMode;
+
+childDocuments = XQuery('for $elem in documents where $elem/parent_document_id = 6730895335670978597 return $elem');
+%>
+
+<div class="">
+  Текущий мод - <%=mode%><br>
+  Количество дочерних документов - <%=childDocuments.length%>
+</div>
+
+6730895335670978597
