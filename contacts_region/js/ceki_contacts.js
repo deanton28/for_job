@@ -15,7 +15,7 @@ window.cekiContacts = {};
     {
       name: 'Тебеньков Яков Михайлович',
       foto: exports.linkForWebtutor + 'img/tebenkov_3x4.png',
-      position: 'И.о. директора ФГБУ «ЦЭКИ»',
+      position: 'Директор ФГБУ «ЦЭКИ»',
       phone: '',
       email: 'yatebenkov@ceki.ru',
       question: '',
