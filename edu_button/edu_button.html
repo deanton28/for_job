@@ -42,28 +42,28 @@ buttonData3 = getButtonData(button3);
 <link id="style" rel="stylesheet" href="custom_template/edu_button/css/edu_button_css.css">
 
 <style>
-  .menu_wrapper .menu-item.item_1::after {
+  .button_wrapper .button-item.item_1::after {
   display: <%=button1DisplayAttention == '1' ? 'inline-block' : 'none'%>;
   }
 
-  .menu_wrapper .menu-item.item_2::after {
+  .button_wrapper .button-item.item_2::after {
   display: <%=button2DisplayAttention == '1' ? 'inline-block' : 'none'%>;
   }
 
-  .menu_wrapper .menu-item.item_3::after {
+  .button_wrapper .button-item.item_3::after {
   display: <%=button3DisplayAttention == '1' ? 'inline-block' : 'none'%>;
   }
 </style>
 
-<div class="menu_wrapper">
-  <div class="menu-items_place">
-    <a href="<%=buttonData1.link%>" target="<%=buttonData1.target%>" class="menu-item item_1" style="background-image: url(<%=buttonData1.image%>)">
+<div class="button_wrapper">
+  <div class="button-items_place">
+    <a href="<%=buttonData1.link%>" target="<%=buttonData1.target%>" class="button-item item_1" style="background-image: url(<%=buttonData1.image%>)">
       <span class="item-name"><%=buttonData1.name%></span>
     </a>
-    <a href="<%=buttonData2.link%>" target="<%=buttonData2.target%>" class="menu-item item_2" style="background-image: url(<%=buttonData2.image%>)">
+    <a href="<%=buttonData2.link%>" target="<%=buttonData2.target%>" class="button-item item_2" style="background-image: url(<%=buttonData2.image%>)">
       <span class="item-name"><%=buttonData2.name%></span>
     </a>
-    <a href="<%=buttonData3.link%>" target="<%=buttonData3.target%>" class="menu-item item_3" style="background-image: url(<%=buttonData3.image%>)">
+    <a href="<%=buttonData3.link%>" target="<%=buttonData3.target%>" class="button-item item_3" style="background-image: url(<%=buttonData3.image%>)">
       <span class="item-name"><%=buttonData3.name%></span>
     </a>
   </div>

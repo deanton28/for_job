@@ -1,4 +1,4 @@
-.menu_wrapper .menu-items_place {
+.button_wrapper .button-items_place {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@
   background: url("../img/pools.svg");
 }
 */
-.menu_wrapper .menu-item {
+.button_wrapper .button-item {
   position: relative;
   display: flex;
   align-items: center;
@@ -35,15 +35,15 @@
   cursor: pointer;
 }
 
-.menu_wrapper .menu-item:hover {
+.button_wrapper .button-item:hover {
   background-color: rgba(79, 79, 79, 0.05);
 }
 
-.menu_wrapper .menu-item:active {
+.button_wrapper .button-item:active {
   box-shadow: inset 0 0 5px 1px #4f4f4f;
 }
 
-.menu_wrapper .menu-item::after {
+.button_wrapper .button-item::after {
   content: '';
   position:absolute;
   top: -10px;
@@ -55,19 +55,19 @@
   border-radius: 50%;
 }
 
-.menu_wrapper .menu-item.item_1::after {
+.button_wrapper .button-item.item_1::after {
   display: none;
 }
 
-.menu_wrapper .menu-item.item_2::after {
+.button_wrapper .button-item.item_2::after {
   display: inline-block;
 }
 
-.menu_wrapper .menu-item.item_3::after {
+.button_wrapper .button-item.item_3::after {
   display: none;
 }
 
-.menu_wrapper .item-name {
+.button_wrapper .item-name {
   display: block;
   margin-left: 10px;
   width: 150px;
