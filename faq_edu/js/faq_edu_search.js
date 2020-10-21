@@ -58,6 +58,7 @@ const displaySearchField = (searchFrase, checkbox, checkNew, dataList) => {
 };
 
 const questionPlace = document.querySelector('.question-area');
+const questionBlockPP = questionPlace.querySelector('.block-questions_PP');
 const questionBlockVPCT = questionPlace.querySelector('.block-questions_VPCT');
 const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
 const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
@@ -73,6 +74,7 @@ const checkType = searchPlace.querySelector('#search-type');
 const checkNew = searchPlace.querySelector('#search-new');
 const onlyNew = searchPlace.querySelector('.only-new');
 
+renderQuestionsList(window.questions.transitionPeriod, 'PP', questionBlockPP);
 renderQuestionsList(window.questions.departamentalProgrammDigitalTransfprmation, 'VPCT', questionBlockVPCT);
 renderQuestionsList(window.questions.objecktAccounting, 'OU', questionBlockOu);
 renderQuestionsList(window.questions.eventOnInformatization, 'MPI', questionBlockMpi);
