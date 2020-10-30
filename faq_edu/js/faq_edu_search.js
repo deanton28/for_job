@@ -58,10 +58,13 @@ const displaySearchField = (searchFrase, checkbox, checkNew, dataList) => {
 };
 
 const questionPlace = document.querySelector('.question-area');
-const questionBlockPP = questionPlace.querySelector('.block-questions_PP');
+const questionBlockNEW = questionPlace.querySelector('.block-questions_NEW');
 const questionBlockVPCT = questionPlace.querySelector('.block-questions_VPCT');
+const questionBlockNPA = questionPlace.querySelector('.block-questions_NPA');
+const questionBlockFGISKI = questionPlace.querySelector('.block-questions_FGISKI');
 const questionBlockOu = questionPlace.querySelector('.block-questions_OU');
 const questionBlockMpi = questionPlace.querySelector('.block-questions_MPI');
+const questionBlockTRU = questionPlace.querySelector('.block-questions_TRU');
 const questionsList = questionPlace.getElementsByClassName('question');
 
 const searchPlace = document.querySelector('.search-area');
@@ -74,10 +77,13 @@ const checkType = searchPlace.querySelector('#search-type');
 const checkNew = searchPlace.querySelector('#search-new');
 const onlyNew = searchPlace.querySelector('.only-new');
 
-renderQuestionsList(window.questions.transitionPeriod, 'PP', questionBlockPP);
+renderQuestionsList(window.questions.newQuestions, 'NEW', questionBlockNEW);
 renderQuestionsList(window.questions.departamentalProgrammDigitalTransfprmation, 'VPCT', questionBlockVPCT);
+renderQuestionsList(window.questions.normativeLegalActs, 'NPA', questionBlockNPA);
+renderQuestionsList(window.questions.fgisKi, 'FGISKI', questionBlockFGISKI);
 renderQuestionsList(window.questions.objecktAccounting, 'OU', questionBlockOu);
 renderQuestionsList(window.questions.eventOnInformatization, 'MPI', questionBlockMpi);
+renderQuestionsList(window.questions.purchasesTru, 'TRU', questionBlockTRU);
 
 searchButton.addEventListener('click', (evt) => {
   evt.preventDefault();
